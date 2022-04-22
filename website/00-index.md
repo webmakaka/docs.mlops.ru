@@ -14,6 +14,19 @@ permalink: /
 Поэтому такое название. 
 
 
+
+<br/>
+
+### Планы
+
+Планируется собирать записи, связанные с автоматизацией процессов машинного обучения.
+
+Таких, как вот это.
+
+https://www.youtube.com/watch?v=Kvxaj6pHeVA
+
++ всякие kubernetes, kubeflow, mlflow etc.
+
 <br/>
 
 ### MachineLearning / DeepLearning
