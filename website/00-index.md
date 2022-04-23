@@ -38,7 +38,7 @@ https://www.youtube.com/watch?v=Kvxaj6pHeVA
 
 ### DevOps
 
-Мы обсуждаем [здесь](//gitops.org)
+Мы обсуждаем [здесь](//gitops.ru)
 
 <br/>
 <br/>
