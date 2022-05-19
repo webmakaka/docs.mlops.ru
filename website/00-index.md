@@ -10,10 +10,8 @@ permalink: /
 
 ### Админ сайта - тормоз
 
-Пока думал, регать ему или нет MLOPS его зарегал кто-то другой. 
-Поэтому такое название. 
-
-
+Пока думал, регать ему или нет MLOPS его зарегал кто-то другой.
+Поэтому такое название.
 
 <br/>
 
@@ -25,14 +23,23 @@ permalink: /
 
 https://www.youtube.com/watch?v=Kvxaj6pHeVA
 
-+ всякие kubernetes, kubeflow, mlflow etc.
+-   всякие kubernetes, kubeflow, mlflow etc.
+
+<br/>
+
+### Нужно посмотреть
+
+**A Deep Dive into Kubeflow Pipelines - Senthil Raja Chermapandian, Ericsson**  
+https://www.youtube.com/watch?v=TcacANo9dB8
+
+**A Component Registry for Kubeflow Pipelines - Christian Kadner, IBM**  
+https://www.youtube.com/watch?v=LcvOySBDSmo
 
 <br/>
 
 ### MachineLearning / DeepLearning
 
 Мы обсуждаем [здесь](//matematika.org)
-
 
 <br/>
 
@@ -43,5 +50,5 @@ https://www.youtube.com/watch?v=Kvxaj6pHeVA
 <br/>
 <br/>
 
-Telegram группы для обсуждения созданы. 
+Telegram группы для обсуждения созданы.
 Если хотите, подключайтесь. Задавайте вопросы. Делитесь знаниями!
