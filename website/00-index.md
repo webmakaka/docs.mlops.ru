@@ -29,11 +29,8 @@ https://www.youtube.com/watch?v=Kvxaj6pHeVA
 
 ### Нужно посмотреть
 
-**A Deep Dive into Kubeflow Pipelines - Senthil Raja Chermapandian, Ericsson**  
-https://www.youtube.com/watch?v=TcacANo9dB8
-
-**A Component Registry for Kubeflow Pipelines - Christian Kadner, IBM**  
-https://www.youtube.com/watch?v=LcvOySBDSmo
+**Dr. Paul Elvers: Getting Started with MLOps: Best Practices for Production-Ready ML Systems | PyData**  
+https://www.youtube.com/watch?v=Z5uKdHHedls
 
 <br/>
 
