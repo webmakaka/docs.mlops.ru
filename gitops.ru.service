@@ -1,5 +1,5 @@
 [Unit]
-Description=dlops.ru
+Description=aiops.ru
 
 Requires=docker.service
 After=docker.service
@@ -8,14 +8,14 @@ After=docker.service
 
 Restart=always
 TimeoutStartSec=0
-ExecStartPre=-/usr/bin/docker kill dlops.ru
-ExecStartPre=-/usr/bin/docker rm dlops.ru
-ExecStartPre=-/usr/bin/docker pull marley/dlops.ru:latest
-ExecStart=/bin/sh -c '/usr/bin/docker run --name dlops.ru   \
+ExecStartPre=-/usr/bin/docker kill aiops.ru
+ExecStartPre=-/usr/bin/docker rm aiops.ru
+ExecStartPre=-/usr/bin/docker pull marley/aiops.ru:latest
+ExecStart=/bin/sh -c '/usr/bin/docker run --name aiops.ru   \
  -p 4006:80                        \
- marley/dlops.ru'
-ExecStop=-/usr/bin/docker kill dlops.ru
-ExecStop=-/usr/bin/docker rm dlops.ru
+ marley/aiops.ru'
+ExecStop=-/usr/bin/docker kill aiops.ru
+ExecStop=-/usr/bin/docker rm aiops.ru
 
 [Install]
 WantedBy=multi-user.target

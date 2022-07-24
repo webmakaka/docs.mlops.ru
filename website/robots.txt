@@ -5,5 +5,5 @@ permalink: robots.txt
 
 User-agent: *
 Allow: /
-Host: https://dlops.ru
-Sitemap: https://dlops.ru/sitemap.xml
+Host: https://aiops.ru
+Sitemap: https://aiops.ru/sitemap.xml

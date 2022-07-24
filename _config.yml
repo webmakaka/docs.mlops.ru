@@ -1,15 +1,15 @@
 # Site settings
-title: dlops.ru на русском языке
+title: aiops.ru на русском языке
 
-description: Собираем материалы связанные с разработкой и развертыванием приложений вокруг экосистемы Git
+description: Собираем материалы связанные с разработкой и развертыванием приложений вокруг экосистемы AI
 
-keywords: DLOPS, Clouds, Linux, Docker, Kubernetes, GitHub Actions, FluxCD
+keywords: AIOPS, MLOPS, Clouds, Linux, Docker, Kubernetes
 
 baseurl: '' # the subpath of your site, e.g. /blog/
-url: 'https://dlops.ru' # the base hostname & protocol for your site
+url: 'https://aiops.ru' # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 
 plugins:
-    - jekyll-sitemap
+  - jekyll-sitemap

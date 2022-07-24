@@ -1,11 +1,10 @@
 ---
 layout: page
-title: DLOPS
+title: AIOPS
 permalink: /
 ---
 
-# DLOPS
-
+# AIOPS
 
 <br/>
 
@@ -17,7 +16,7 @@ permalink: /
 
 https://www.youtube.com/watch?v=Kvxaj6pHeVA
 
--   всякие kubernetes, kubeflow, mlflow etc.
+- всякие kubernetes, kubeflow, mlflow etc.
 
 <br/>
 
