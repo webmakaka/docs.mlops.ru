@@ -8,6 +8,14 @@ permalink: /
 
 <br/>
 
+### [Book] [Faisal Masood, Ross Brigoli] Machine Learning on Kubernetes [ENG, 2022]
+
+Предлагается совместно почитать.
+
+![Machine Learning on Kubernetes](/img/Machine-Learning-on-Kubernetes.png 'Machine Learning on Kubernetes'){: .center-image }
+
+<br/>
+
 ### Планы
 
 Планируется собирать записи, связанные с автоматизацией процессов машинного обучения.
