@@ -16,7 +16,7 @@ permalink: /study/books/machine-learning-on-kubernetes/the-anatomy-of-a-machine-
 
 ```
 $ cd ~/tmp/
-$ git clone git@github.com:PacktPublishing/Machine-Learning-on-Kubernetes.git
+$ git clone git@github.com:webmakaka/Machine-Learning-on-Kubernetes.git
 $ cd Machine-Learning-on-Kubernetes/
 ```
 
@@ -31,15 +31,15 @@ $ kubectl create -f Chapter04/odh-subscription.yaml
 
 ```
 $ kubectl get packagemanifests -o wide -n olm | grep -I opendatahub
-opendatahub-operator                        Community Operators Red Hat   34m
+opendatahub-operator                        Community Operators Red Hat   52s
 ```
 
 <br/>
 
 ```
 $ kubectl get pods -n operators
-NAME                                    READY   STATUS    RESTARTS   AGE
-opendatahub-operator-6496657bf6-hllqr   1/1     Running   0          25s
+NAME                                   READY   STATUS    RESTARTS   AGE
+opendatahub-operator-b5f4c5757-d9td2   1/1     Running   0          15s
 ```
 
 <br/>
@@ -50,6 +50,7 @@ opendatahub-operator-6496657bf6-hllqr   1/1     Running   0          25s
 
 ```
 $ kubectl create ns keycloak
+$ kubectl create -f /Chapter04/postgresdb/* --namespace keycloak
 $ kubectl create -f Chapter04/keycloak.yaml --namespace keycloak
 ```
 
@@ -63,32 +64,47 @@ $ kubectl get pods -n keycloak
 <br/>
 
 ```
-$ minikube ip
+//
+$ kubectl logs keycloak-ffb6b445c-dg2bz -n keycloak
+```
+
+<br/>
+
+```
+$ minikube ip --profile ${PROFILE}
+192.168.49.2
 ```
 
 <br/>
 
 ```
 Open the chapter4/keycloak-ingress.yaml file and replace the KEYCLOAK_HOST string with the keycloak.<THE_IP_ADDRESS_OF_YOUR_MINIKUBE>.
-nip.io string. So, if the IP address of your minikube is 192.168.61.72 , then
-the string value would be keycloak.192.168.61.72.nip.io.
+nip.io string. So, if the IP address of your minikube is 192.168.49.2, then the string value would be keycloak.192.168.49.2.nip.io.
 ```
 
 <br/>
 
 ```
-$ kubectl create -f chapter4/keycloak-ingress.yaml --namespace keycloak
+$ vi Chapter04/keycloak-ingress.yaml
+```
+
+<br/>
+
+```
+$ kubectl create -f Chapter04/keycloak-ingress.yaml --namespace keycloak
 ```
 
 <br/>
 
 ```
 $ kubectl get ingress --namespace keycloak
+NAME       CLASS   HOSTS                          ADDRESS        PORTS     AGE
+keycloak   nginx   keycloak.192.168.49.2.nip.io   192.168.49.2   80, 443   4m8s
 ```
 
 <br/>
 
-https://keycloak.192.168.61.72.nip.io/auth/
+https://keycloak.192.168.49.2.nip.io/auth/
 
 <br/>
 

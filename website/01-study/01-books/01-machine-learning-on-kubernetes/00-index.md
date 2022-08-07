@@ -8,6 +8,8 @@ permalink: /study/books/machine-learning-on-kubernetes/
 
 # [Book] [Faisal Masood, Ross Brigoli] Machine Learning on Kubernetes [ENG, 2022]
 
+<br/>
+
 ## Part 1: The Challenges of Adopting ML and Understanding MLOps (What and Why)
 
 ### 01. Challenges in Machine Learning
@@ -35,7 +37,7 @@ $ kubectl apply -f https://github.com/operator-framework/operator-lifecycle-mana
 <br/>
 
 ```
-$ watch kubectl get pods -n olm
+$ kubectl get pods -n olm
 ```
 
 <br/>
@@ -53,9 +55,8 @@ packageserver-7bf4799ddf-cfsdx     1/1     Running   0          84s
 
 ```
 $ kubectl get catalogsource -n olm
-NAME                         DISPLAY                       TYPE   PUBLISHER        AGE
-community-operators-redhat   Community Operators Red Hat   grpc   RedHat           37m
-operatorhubio-catalog        Community Operators           grpc   OperatorHub.io   42m
+NAME                    DISPLAY               TYPE   PUBLISHER        AGE
+operatorhubio-catalog   Community Operators   grpc   OperatorHub.io   91s
 ```
 
 <br/>
