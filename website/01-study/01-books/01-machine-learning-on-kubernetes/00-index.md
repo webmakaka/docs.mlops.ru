@@ -37,7 +37,7 @@ $ kubectl apply -f https://github.com/operator-framework/operator-lifecycle-mana
 <br/>
 
 ```
-$ kubectl get pods -n olm
+$ watch kubectl get pods --namespace olm
 ```
 
 <br/>
@@ -54,7 +54,7 @@ packageserver-7bf4799ddf-cfsdx     1/1     Running   0          84s
 <br/>
 
 ```
-$ kubectl get catalogsource -n olm
+$ kubectl get catalogsource --namespace olm
 NAME                    DISPLAY               TYPE   PUBLISHER        AGE
 operatorhubio-catalog   Community Operators   grpc   OperatorHub.io   91s
 ```
@@ -67,23 +67,8 @@ operatorhubio-catalog   Community Operators   grpc   OperatorHub.io   91s
 
 ### [Chapter 4. The Anatomy of a Machine Learning Platform](/study/books/machine-learning-on-kubernetes/the-anatomy-of-a-machine-learning-platform/)
 
-### Chapter 5. Data Engineering
+### [Chapter 5. Data Engineering](/study/books/machine-learning-on-kubernetes/data-engineering/)
 
-### Chapter 6. Machine Learning Engineering
+### [Chapter 6. Machine Learning Engineering](/study/books/machine-learning-on-kubernetes/machine-learning-engineering/)
 
 ### Chapter 7. Model Deployment and Automation
-
-<br/>
-
-```
-$ docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:19.0.1 start-dev
-```
-
-<br/>
-
-```
-// admin / admin
-http://localhost:8080/admin
-```
-
-<br/>

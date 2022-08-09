@@ -30,16 +30,16 @@ $ kubectl create -f Chapter04/odh-subscription.yaml
 <br/>
 
 ```
-$ kubectl get packagemanifests -o wide -n olm | grep -I opendatahub
-opendatahub-operator                        Community Operators Red Hat   52s
+$ watch kubectl get pods --namespace operators
+NAME                                   READY   STATUS    RESTARTS   AGE
+opendatahub-operator-b5f4c5757-d9td2   1/1     Running   0          15s
 ```
 
 <br/>
 
 ```
-$ kubectl get pods -n operators
-NAME                                   READY   STATUS    RESTARTS   AGE
-opendatahub-operator-b5f4c5757-d9td2   1/1     Running   0          15s
+$ kubectl get packagemanifests -o wide --namespace olm | grep -I opendatahub
+opendatahub-operator                        Community Operators Red Hat   52s
 ```
 
 <br/>
@@ -50,22 +50,14 @@ opendatahub-operator-b5f4c5757-d9td2   1/1     Running   0          15s
 
 ```
 $ kubectl create ns keycloak
-$ kubectl create -f /Chapter04/postgresdb/* --namespace keycloak
+$ kubectl create -f ./Chapter04/postgresdb/ --namespace keycloak
 $ kubectl create -f Chapter04/keycloak.yaml --namespace keycloak
 ```
 
 <br/>
 
 ```
-// It may take a while to start
-$ kubectl get pods -n keycloak
-```
-
-<br/>
-
-```
-//
-$ kubectl logs keycloak-ffb6b445c-dg2bz -n keycloak
+$ watch kubectl get pods --namespace keycloak
 ```
 
 <br/>
@@ -78,20 +70,26 @@ $ minikube ip --profile ${PROFILE}
 <br/>
 
 ```
-Open the chapter4/keycloak-ingress.yaml file and replace the KEYCLOAK_HOST string with the keycloak.<THE_IP_ADDRESS_OF_YOUR_MINIKUBE>.
-nip.io string. So, if the IP address of your minikube is 192.168.49.2, then the string value would be keycloak.192.168.49.2.nip.io.
+$ minikube ip --profile ${PROFILE}
 ```
 
 <br/>
 
 ```
-$ vi Chapter04/keycloak-ingress.yaml
+$ export MINIKUBE_IP_ADDR=192.168.49.2
 ```
 
 <br/>
 
 ```
-$ kubectl create -f Chapter04/keycloak-ingress.yaml --namespace keycloak
+// Check
+// $ envsubst < Chapter04/keycloak-ingress.yaml
+```
+
+<br/>
+
+```
+$ envsubst < Chapter04/keycloak-ingress.yaml | kubectl create -f - --namespace keycloak
 ```
 
 <br/>
