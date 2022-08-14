@@ -71,4 +71,33 @@ operatorhubio-catalog   Community Operators   grpc   OperatorHub.io   91s
 
 ### [Chapter 6. Machine Learning Engineering](/study/books/machine-learning-on-kubernetes/machine-learning-engineering/)
 
-### Chapter 7. Model Deployment and Automation
+### [Chapter 7. Model Deployment and Automation](/study/books/machine-learning-on-kubernetes/model-deployment-and-automation/)
+
+<!--
+
+
+TMP
+
+```
+
+$ kubectl delete svc keycloak --namespace keycloak
+
+$ kubectl expose deployment keycloak --type=NodePort --port=8080 --namespace keycloak
+
+$ sudo vi /etc/nginx/nginx.conf
+
+ server {
+      listen 192.168.1.101:60000;
+      proxy_pass 192.168.49.2:30830;
+  }
+
+
+
+
+$ sudo systemctl restart nginx
+
+$ curl 192.168.1.101:60000
+```
+
+
+-->

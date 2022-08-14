@@ -21,14 +21,14 @@ keycloak -> import -> Chapter05/realm-export.json -> If a resource exists - Skip
 Users -> Add user ->
 
 Username: mluser
-Email: a@a.com
-First Name: ml
-Last Name: user
+Email: mluser@example.com
+First Name: mluser
+Last Name: mluser
 
 User Enabled: ON
 Email Verified: ON
 
-Groups: /ml-group
+Groups: ml-group
 
 SAVE
 
@@ -40,6 +40,8 @@ Password: mluser
 Password Confirmation: mluser
 
 Temporary: OFF
+
+Set Password
 
 <br/>
 
@@ -77,38 +79,48 @@ $ envsubst < manifests/kfdef/ml-platform.yaml | kubectl create -f - --namespace 
 <br/>
 
 ```
-$ watch kubectl get pods -n ml-workshop
+$ watch kubectl get pods --namespace ml-workshop
 ```
+
+<!--
+
+<br/>
+
+Убрал prometheus и grafana. Т.к. ресурсов не хватает.
+
+
+
+
+- Statefulsets
+* Daemonsets
+
+-->
 
 <br/>
 
 ```
-// Не все запустилось у меня!
 NAME                                           READY   STATUS      RESTARTS        AGE
-app-aflow-airflow-scheduler-6f9c44866d-mmst7   2/2     Running     5 (8m41s ago)   15m
-app-aflow-airflow-web-686b66f886-j6dxx         2/2     Running     0               15m
-app-aflow-airflow-web-6d9587698-t88ss          0/2     Pending     0               5m5s
-app-aflow-airflow-worker-0                     2/2     Running     3 (6m20s ago)   15m
-app-aflow-postgresql-0                         1/1     Running     0               15m
-app-aflow-redis-master-0                       1/1     Running     0               15m
-flightsdatadb-0                                1/1     Running     0               12m
-grafana-56594fd448-xbr9s                       1/1     Running     0               15m
-jupyterhub-6cff7d6cc5-67fht                    1/1     Running     0               15m
-jupyterhub-db-0                                1/1     Running     0               15m
-minio-ml-workshop-7fcc5dfd8-4jnc8              1/1     Running     0               15m
-minio-ml-workshop-8x4dj                        0/1     Completed   4               15m
-mlflow-5fb4cb5d5d-mc4vr                        2/2     Running     0               15m
-mlflow-db-0                                    1/1     Running     1 (13m ago)     15m
-prometheus-odh-monitoring-0                    0/2     Pending     0               5m3s
-prometheus-operator-7869664bcc-fp94c           1/1     Running     0               13m
-seldon-controller-manager-c5f59c56d-s5lcv      1/1     Running     0               15m
-spark-operator-6bc4f8f5f8-6x5t6                1/1     Running     0               15m
+app-aflow-airflow-scheduler-6f9c44866d-ppzcj   2/2     Running     0               14m
+app-aflow-airflow-web-6d9587698-w2786          2/2     Running     0               4m56s
+app-aflow-airflow-worker-0                     2/2     Running     3 (3m47s ago)   14m
+app-aflow-postgresql-0                         1/1     Running     0               14m
+app-aflow-redis-master-0                       1/1     Running     0               14m
+flightsdatadb-0                                1/1     Running     0               10m
+jupyterhub-6cff7d6cc5-t5cjw                    1/1     Running     0               14m
+jupyterhub-db-0                                1/1     Running     0               14m
+minio-ml-workshop-6fknp                        0/1     Completed   2               14m
+minio-ml-workshop-7fcc5dfd8-lq8br              1/1     Running     0               14m
+mlflow-5fb4cb5d5d-66qmm                        2/2     Running     0               14m
+mlflow-db-0                                    1/1     Running     1 (11m ago)     14m
+prometheus-odh-monitoring-0                    2/2     Running     0               6m
+seldon-controller-manager-c5f59c56d-wh652      1/1     Running     0               14m
+spark-operator-6bc4f8f5f8-xblrp                1/1     Running     0               14m
 ```
 
 <br/>
 
 ```
-$ kubectl get all -n ml-workshop
+$ kubectl get all --namespace ml-workshop
 ```
 
 <br/>

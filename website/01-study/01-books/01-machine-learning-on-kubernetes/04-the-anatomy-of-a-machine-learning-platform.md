@@ -30,6 +30,7 @@ $ kubectl create -f Chapter04/odh-subscription.yaml
 <br/>
 
 ```
+// Нужно ждать пару минут
 $ watch kubectl get pods --namespace operators
 NAME                                   READY   STATUS    RESTARTS   AGE
 opendatahub-operator-b5f4c5757-d9td2   1/1     Running   0          15s
@@ -65,12 +66,6 @@ $ watch kubectl get pods --namespace keycloak
 ```
 $ minikube ip --profile ${PROFILE}
 192.168.49.2
-```
-
-<br/>
-
-```
-$ minikube ip --profile ${PROFILE}
 ```
 
 <br/>
