@@ -73,13 +73,13 @@ $ export MINIKUBE_IP_ADDR=192.168.49.2
 <br/>
 
 ```
-$ envsubst < manifests/kfdef/ml-platform.yaml | kubectl create -f - --namespace ml-workshop
+$ envsubst < manifests/kfdef/ml-platform.yaml | kubectl create -f - -n ml-workshop
 ```
 
 <br/>
 
 ```
-$ watch kubectl get pods --namespace ml-workshop
+$ watch kubectl get pods -n ml-workshop
 ```
 
 <!--
@@ -120,7 +120,7 @@ spark-operator-6bc4f8f5f8-xblrp                1/1     Running     0            
 <br/>
 
 ```
-$ kubectl get all --namespace ml-workshop
+$ kubectl get all -n ml-workshop
 ```
 
 <br/>
@@ -130,7 +130,7 @@ $ kubectl get all --namespace ml-workshop
 <br/>
 
 ```
-$ kubectl get ingress --namespace ml-workshop
+$ kubectl get ingress -n ml-workshop
 NAME                   CLASS   HOSTS                            ADDRESS        PORTS     AGE
 ap-airflow2            nginx   airflow.192.168.49.2.nip.io      192.168.49.2   80, 443   3m36s
 grafana                nginx   grafana.192.168.49.2.nip.io      192.168.49.2   80, 443   3m36s
@@ -169,13 +169,13 @@ spark-operator-6bc4f8f5f8-6x5t6                1/1     Running     0            
 <br/>
 
 ```
-$ kubectl create -f Chapter05/simple-spark-cluster.yaml --namespace ml-workshop
+$ kubectl create -f Chapter05/simple-spark-cluster.yaml -n ml-workshop
 ```
 
 <br/>
 
 ```
-$ kubectl get pods --namespace ml-workshop | grep simple-spark
+$ kubectl get pods -n ml-workshop | grep simple-spark
 ```
 
 <br/>

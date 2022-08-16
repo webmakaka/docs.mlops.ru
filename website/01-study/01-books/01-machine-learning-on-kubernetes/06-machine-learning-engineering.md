@@ -25,7 +25,7 @@ https://mlflow.192.168.49.2.nip.io
 <br/>
 
 ```
-// ??? mluser / mluser
+// mluser / mluser
 https://jupyterhub.192.168.49.2.nip.io/hub/spawn
 ```
 

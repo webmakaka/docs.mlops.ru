@@ -20,6 +20,59 @@ permalink: /study/books/machine-learning-on-kubernetes/
 
 <br/>
 
+### Technical requirements
+
+<br/>
+
+• A central processing unit (CPU) with at least four cores; eight are recommended
+• Memory of at least 16 gigabytes (GB); 32 GB is recommended
+• Disk with available space of at least 60 GB
+
+<br/>
+
+### Поднимаем
+
+```
+$ export \
+    PROFILE=marley-minikube \
+    CPUS=8 \
+    MEMORY=30G \
+    HDD=80G \
+    DRIVER=docker \
+    KUBERNETES_VERSION=v1.24.3
+```
+
+<br/>
+
+```
+$ {
+    minikube --profile ${PROFILE} config set memory ${MEMORY}
+    minikube --profile ${PROFILE} config set cpus ${CPUS}
+    minikube --profile ${PROFILE} config set disk-size ${HDD}
+
+    minikube --profile ${PROFILE} config set driver ${DRIVER}
+
+    minikube --profile ${PROFILE} config set kubernetes-version ${KUBERNETES_VERSION}
+    minikube start --profile ${PROFILE} --embed-certs
+
+    // Enable ingress
+    minikube addons --profile ${PROFILE} enable ingress
+
+    // Enable registry
+    // minikube addons --profile ${PROFILE} enable registry
+}
+```
+
+<br/>
+
+    // При необходимости можно будет удалить профиль и все созданное в профиле следующей командой
+    // $ minikube --profile ${PROFILE} stop && minikube --profile ${PROFILE} delete
+
+    // Стартовать остановленный minikube
+    // $ minikube --profile ${PROFILE} start
+
+<br/>
+
 #### Installing Operator Lifecycle Manager (OLM)
 
 <br/>
@@ -37,7 +90,7 @@ $ kubectl apply -f https://github.com/operator-framework/operator-lifecycle-mana
 <br/>
 
 ```
-$ watch kubectl get pods --namespace olm
+$ watch kubectl get pods -n olm
 ```
 
 <br/>
@@ -54,7 +107,7 @@ packageserver-7bf4799ddf-cfsdx     1/1     Running   0          84s
 <br/>
 
 ```
-$ kubectl get catalogsource --namespace olm
+$ kubectl get catalogsource -n olm
 NAME                    DISPLAY               TYPE   PUBLISHER        AGE
 operatorhubio-catalog   Community Operators   grpc   OperatorHub.io   91s
 ```
@@ -73,16 +126,25 @@ operatorhubio-catalog   Community Operators   grpc   OperatorHub.io   91s
 
 ### [Chapter 7. Model Deployment and Automation](/study/books/machine-learning-on-kubernetes/model-deployment-and-automation/)
 
-<!--
+<br/>
 
+## Part 3: How to Use the MLOps Platform and Build a Full End-to-End Project Using the New Platform
+
+<br/>
+
+• Chapter 8, Building a Complete ML Project Using the Platform
+• Chapter 9, Building Your Data Pipeline
+• Chapter 10, Building, Deploying, and Monitoring Your Model
+• Chapter 11, Machine Learning on Kubernetes
+
+<!--
 
 TMP
 
 ```
+$ kubectl delete svc keycloak -n keycloak
 
-$ kubectl delete svc keycloak --namespace keycloak
-
-$ kubectl expose deployment keycloak --type=NodePort --port=8080 --namespace keycloak
+$ kubectl expose deployment keycloak --type=NodePort --port=8080 -n keycloak
 
 $ sudo vi /etc/nginx/nginx.conf
 

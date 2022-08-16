@@ -16,7 +16,7 @@ permalink: /study/books/machine-learning-on-kubernetes/the-anatomy-of-a-machine-
 
 ```
 $ cd ~/tmp/
-$ git clone git@github.com:webmakaka/Machine-Learning-on-Kubernetes.git
+$ git clone https://github.com/webmakaka/Machine-Learning-on-Kubernetes.git
 $ cd Machine-Learning-on-Kubernetes/
 ```
 
@@ -31,7 +31,7 @@ $ kubectl create -f Chapter04/odh-subscription.yaml
 
 ```
 // Нужно ждать пару минут
-$ watch kubectl get pods --namespace operators
+$ watch kubectl get pods --n operators
 NAME                                   READY   STATUS    RESTARTS   AGE
 opendatahub-operator-b5f4c5757-d9td2   1/1     Running   0          15s
 ```
@@ -39,7 +39,7 @@ opendatahub-operator-b5f4c5757-d9td2   1/1     Running   0          15s
 <br/>
 
 ```
-$ kubectl get packagemanifests -o wide --namespace olm | grep -I opendatahub
+$ kubectl get packagemanifests -o wide -n olm | grep -I opendatahub
 opendatahub-operator                        Community Operators Red Hat   52s
 ```
 
@@ -51,14 +51,14 @@ opendatahub-operator                        Community Operators Red Hat   52s
 
 ```
 $ kubectl create ns keycloak
-$ kubectl create -f ./Chapter04/postgresdb/ --namespace keycloak
-$ kubectl create -f Chapter04/keycloak.yaml --namespace keycloak
+$ kubectl create -f ./Chapter04/postgresdb/ -n keycloak
+$ kubectl create -f Chapter04/keycloak.yaml -n keycloak
 ```
 
 <br/>
 
 ```
-$ watch kubectl get pods --namespace keycloak
+$ watch kubectl get pods -n keycloak
 ```
 
 <br/>
@@ -84,23 +84,19 @@ $ export MINIKUBE_IP_ADDR=192.168.49.2
 <br/>
 
 ```
-$ envsubst < Chapter04/keycloak-ingress.yaml | kubectl create -f - --namespace keycloak
+$ envsubst < Chapter04/keycloak-ingress.yaml | kubectl create -f - -n keycloak
 ```
 
 <br/>
 
 ```
-$ kubectl get ingress --namespace keycloak
+$ kubectl get ingress -n keycloak
 NAME       CLASS   HOSTS                          ADDRESS        PORTS     AGE
 keycloak   nginx   keycloak.192.168.49.2.nip.io   192.168.49.2   80, 443   4m8s
 ```
 
 <br/>
 
+// Administration Console
+// admin/admin
 https://keycloak.192.168.49.2.nip.io/auth/
-
-<br/>
-
-Administration Console
-
-admin/admin
