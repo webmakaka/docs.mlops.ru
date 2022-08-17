@@ -10,6 +10,10 @@ permalink: /study/books/machine-learning-on-kubernetes/model-deployment-and-auto
 
 <br/>
 
+**В MLFlow должна быть зарегистирована модель mlflowdemo.**
+
+<br/>
+
 ```
 $ kubectl get pods -n ml-workshop | grep seldon
 seldon-controller-manager-c5f59c56d-dxr9h              1/1     Running     0             66m
@@ -341,15 +345,19 @@ http://model-test.192.168.49.2.nip.io/prometheus
 
 <br/>
 
-### Introducing Apache Airflow
+### Apache Airflow
 
-// Create an empty repo
-https://github.com/your-user-name/airflow-dags.git
+// Create an empty repo  
+https://github.com/webmak1/airflow-dags
 
 <br/>
 
 ```
 $ kubectl get pods -n ml-workshop | grep airflow
+app-aflow-airflow-scheduler-6f9c44866d-hx9vw                   2/2     Running     2 (124m ago)    23h
+app-aflow-airflow-web-6d9587698-4hk9w                          2/2     Running     4 (130m ago)    23h
+app-aflow-airflow-worker-0                                     2/2     Running     2 (5h51m ago)   23h
+
 ```
 
 <br/>
@@ -368,18 +376,47 @@ https://airflow.192.168.49.2.nip.io
 $ kubectl edit kfdef opendatahub-ml-workshop -n ml-workshop
 ```
 
-Replace the value of the DAG_REPO parameter with the URL of the Git repository
+Нужно заменить значение DAG_REPO на созданные репозиторий git.
+
+Замечания:
+
+1. С .git в конце.
+2. Нужен еще и бранч main.
 
 ```
+// Validate
+// Подождать пару минут
 $ kubectl get deployment app-aflow-airflow-scheduler -o yaml -n ml-workshop | grep value:.*airflow-dags.git
 ```
 
 <br/>
 
 ```
-Jupiterhub
+https://airflow.192.168.49.2.nip.io
+```
 
-Let's use Base Elyra Notebook Image
+<br/>
+
+Пусто д.б.
+
+Под
+
+app-aflow-airflow-web-59b954bdfb-rjgb7
+
+красный
+
+<br/>
+
+### Configuring Airflow runtime images
+
+<br/>
+
+https://jupyterhub.192.168.49.2.nip.io/
+
+<br/>
+
+```
+Base Elyra Notebook Image
 
 Container size: Small
 
@@ -390,37 +427,66 @@ Custom variable
 Variable name: AWS_SECRET_ACCESS_KEY
 Variable value: minio123
 
-Select: no
+Select: yes
 
 Start server
 ```
 
 <br/>
 
-Machine-Learning-on-Kubernetes/chapter7/model_deploy_pipeline/
+Machine-Learning-on-Kubernetes/Chapter07/model_deploy_pipeline/
 
 <br/>
 
-File>New>Pipeline Editor
+File -> New -> Pipeline Editor
 
-Create hello_world.pipeline
+Rename hello_world.pipeline
 
 <br/>
+
+File > New Python File
+
+Создать 2 файла
 
 hello.py and world.py
+
+<br/>
+
+с содержимым:
 
 ```python
 print('Hello airflow!')
 ```
 
-Runtime Images
-
-In the Add new Runtime Image dialog, add the details of the Kaniko Container
-Builder image, as shown in Figure 7.50, and hit the SAVE & CLOSE button.
+Соединить стрелочкой.
 
 <br/>
 
-Add another runtime image called Airflow Python Runner.
+Runtime Images (слева) -> Добавить
+
+<br/>
+
+```
+Name: Kaniko Container Builder
+
+Source: quay.io/ml-on-k8s/kaniko-container-builder:1.0.0
+
+Image Pull Policy: IfNotPresent
+
+SAVE & CLOSE
+```
+
+<br/>
+
+```
+Name: Airflow Python Runner
+
+Source: quay.io/ml-on-k8s/airflow-python-runner:0.0.11
+
+Image Pull Policy: IfNotPresent
+
+SAVE & CLOSE
+```
 
 <br/>
 
@@ -439,4 +505,134 @@ $ {
 
 <br/>
 
+Переоткрыть pipeline
+
+```
+hello.py -> Kaniko Container Builder
+world.py -> Airflow Python Runner
+```
+
+<br/>
+
+Runtimes (слева) + New Apache Airflow runtime
+
+<br/>
+
+```
+Name: MyAirflow
+
+Apache Airflow UI Endpoint: https://airflow.192.168.49.2.nip.io
+Apache Airflow User Namespace: ml-workshop
+Github API Endpoint: https://api.github.com
+GitHub DAG Repository: webmak1/airflow-dags
+GitHub DAG Repository Branch: main
+
+
+Cloud Object Storage Endpoint: http://minio-ml-workshop:9000
+Cloud Object Storage User name: minio
+Cloud Object Storage Password: minio123
+Cloud Object Storage Bucket Name: airflow
+```
+
+<br/>
+
+```
+Play
+
+Pipeline Name: hello_world
+Runtime Platform: Apache Airflow runtime
+Runtime Configuration: MyAirflow
+```
+
+<br/>
+
+В бранче появился python скрипт.
+
+https://github.com/webmak1/airflow-dags/tree/main
+
+<br/>
+
+https://airflow.192.168.49.2.nip.io/home
+
+Появился DAG
+
+<br/>
+
 ### Automating ML model deployments in Airflow
+
+<br/>
+
+model_deploy.pipeline
+
+<br/>
+
+Перетаскиваем
+
+model_build_push -> build_push_image.py
+
+model_deploy -> deploy_model.py
+
+<br/>
+
+**build_push_image.py**
+
+Kaniko Container Builder
+
+<br/>
+
+File Dependencies
+
+```
+Dockerfile
+base_requirements.txt
+Predictor.py
+```
+
+<br/>
+
+```
+Environment Variables
+
+MODEL_NAME=mlflowdemo
+MODEL_VERSION=1
+CONTAINER_REGISTRY=https://index.docker.io/v1/
+CONTAINER_REGISTRY_USER=webmakaka
+CONTAINER_REGISTRY_PASSWORD=mypassword
+CONTAINER_DETAILS=webmakaka/mlflowdemo:latest
+```
+
+<br/>
+
+**deploy_model.py**
+
+Airflow Python Runner
+
+<br/>
+
+```
+File Dependencies:
+
+Ingress.yaml
+SeldonDeploy.yaml
+```
+
+<br/>
+
+```
+Environment Variables
+
+MODEL_NAME=mlflowdemo
+MODEL_VERSION=1
+CONTAINER_DETAILS=webmakaka/mlflowdemo:latest
+CLUSTER_DOMAIN_NAME=192.168.49.2.nip.io
+```
+
+<br/>
+
+```
+Play
+
+Pipeline Name: model_deploy
+Runtime Platform: Apache Airflow runtime
+Runtime Configuration: MyAirflow
+```
