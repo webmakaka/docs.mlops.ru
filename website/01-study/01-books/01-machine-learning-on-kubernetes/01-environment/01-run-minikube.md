@@ -3,10 +3,10 @@ layout: page
 title: Machine Learning on Kubernetes - Подготовка окружения
 description: Machine Learning on Kubernetes - Подготовка окружения
 keywords: Machine Learning on Kubernetes - Подготовка окружения
-permalink: /study/books/machine-learning-on-kubernetes/environment/
+permalink: /study/books/machine-learning-on-kubernetes/environment/run-minikube/
 ---
 
-# Подготовка окружения
+# Запуск minikube
 
 <br/>
 
@@ -20,8 +20,6 @@ permalink: /study/books/machine-learning-on-kubernetes/environment/
 
 <br/>
 
-### Поднимаем
-
 ```
 $ export \
     PROFILE=marley-minikube \
@@ -29,7 +27,7 @@ $ export \
     MEMORY=30G \
     HDD=80G \
     DRIVER=docker \
-    KUBERNETES_VERSION=v1.24.3
+    KUBERNETES_VERSION=v1.24.4
 ```
 
 <br/>

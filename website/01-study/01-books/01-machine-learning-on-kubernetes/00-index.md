@@ -10,17 +10,25 @@ permalink: /study/books/machine-learning-on-kubernetes/
 
 <br/>
 
-- [Подготовка окружения](/study/books/machine-learning-on-kubernetes/environment/)
+### Подготовка окружения
+
+- [Запуск minikube](/study/books/machine-learning-on-kubernetes/environment/run-minikube/)
+
+- [Инсталляция Operator Lifecycle Manager (OLM)](/study/books/machine-learning-on-kubernetes/environment/installing-operator-lifecycle-manager/)
+
+- [Инсталляция Open Data Hub (ODH) operator](/study/books/machine-learning-on-kubernetes/environment/installing-the-open-data-hub-operator/)
+
+- [Инсталляция Keycloak](/study/books/machine-learning-on-kubernetes/environment/installing-keycloak/)
+
+- [Инсталляция Open Data Hub (ODH)](/study/books/machine-learning-on-kubernetes/environment/installing-open-data-hub/)
 
 <br/>
 
 ## Part 1: The Challenges of Adopting ML and Understanding MLOps (What and Why)
 
-- 1.  Challenges in Machine Learning
-
-- 2.  Understanding MLOps
-
-* [Chapter 3. Exploring Kubernetes](/study/books/machine-learning-on-kubernetes/exploring-kubernetes/)
+- Chapter 1. Challenges in Machine Learning
+- Chapter 2. Understanding MLOps
+- Chapter 3. Exploring Kubernetes
 
 <br/>
 
@@ -28,7 +36,7 @@ permalink: /study/books/machine-learning-on-kubernetes/
 
 <br/>
 
-- [Chapter 4. The Anatomy of a Machine Learning Platform](/study/books/machine-learning-on-kubernetes/the-anatomy-of-a-machine-learning-platform/)
+- Chapter 4. The Anatomy of a Machine Learning Platform
 
 - [Chapter 5. Data Engineering](/study/books/machine-learning-on-kubernetes/data-engineering/)
 
@@ -43,6 +51,7 @@ permalink: /study/books/machine-learning-on-kubernetes/
 <br/>
 
 • Chapter 8. Building a Complete ML Project Using the Platform
-• Chapter 9. Building Your Data Pipeline
-• Chapter 10. Building, Deploying, and Monitoring Your Model
-• Chapter 11. Machine Learning on Kubernetes
+
+- [Chapter 9. Building Your Data Pipeline](/study/books/machine-learning-on-kubernetes/building-your-data-pipeline/)
+  • Chapter 10. Building, Deploying, and Monitoring Your Model
+  • Chapter 11. Machine Learning on Kubernetes

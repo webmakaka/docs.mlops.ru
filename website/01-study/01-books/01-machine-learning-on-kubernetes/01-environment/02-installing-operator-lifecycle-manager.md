@@ -1,16 +1,12 @@
 ---
 layout: page
-title: Machine Learning on Kubernetes - Exploring Kubernetes
-description: Machine Learning on Kubernetes - Exploring Kubernetes
-keywords: Machine Learning on Kubernetes - Exploring Kubernetes
-permalink: /study/books/machine-learning-on-kubernetes/exploring-kubernetes/
+title: Machine Learning on Kubernetes - Инсталляция Operator Lifecycle Manager (OLM)
+description: Machine Learning on Kubernetes - Инсталляция Operator Lifecycle Manager (OLM)
+keywords: Machine Learning on Kubernetes - Инсталляция Operator Lifecycle Manager (OLM)
+permalink: /study/books/machine-learning-on-kubernetes/environment/installing-operator-lifecycle-manager/
 ---
 
-# 03. Exploring Kubernetes
-
-<br/>
-
-#### Installing Operator Lifecycle Manager (OLM)
+# Инсталляция Operator Lifecycle Manager (OLM)
 
 <br/>
 

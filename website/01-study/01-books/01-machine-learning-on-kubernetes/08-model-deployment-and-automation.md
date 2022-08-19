@@ -427,7 +427,7 @@ Custom variable
 Variable name: AWS_SECRET_ACCESS_KEY
 Variable value: minio123
 
-Select: yes
+Secret: no
 
 Start server
 ```
