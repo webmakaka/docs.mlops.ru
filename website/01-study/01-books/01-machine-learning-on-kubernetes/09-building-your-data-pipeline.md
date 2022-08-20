@@ -29,6 +29,12 @@ $ kubectl create -f Chapter09/service-pg-flights-data.yaml -n ml-workshop
 <br/>
 
 ```
+$ watch kubectl get pods -n ml-workshop
+```
+
+<br/>
+
+```
 $ POD_NAME=$(kubectl get pods -n ml-workshop -l app=pg-flights-data -o jsonpath="{.items[0].metadata.name}")
 ```
 
@@ -79,11 +85,7 @@ https://minio.192.168.49.2.nip.io
 <br/>
 
 ```
-Buckets -> Create Bucket
-
-Name: airport-data
-
-Create Bucket
+Buckets -> Create Bucket > airport-data
 ```
 
 <br/>
@@ -111,7 +113,7 @@ https://jupyterhub.192.168.49.2.nip.io/hub/spawn
 ```
 Elyra Notebook Image with Spark
 
-// Large не стартовал
+// Large не стартовал. Там запрос на 4 CPU 16 GB
 Container size: Medium
 
 Start server

@@ -372,39 +372,6 @@ $ kubectl get ingress -n ml-workshop | grep airflow
 https://airflow.192.168.49.2.nip.io
 ```
 
-```
-$ kubectl edit kfdef opendatahub-ml-workshop -n ml-workshop
-```
-
-Нужно заменить значение DAG_REPO на созданные репозиторий git.
-
-Замечания:
-
-1. С .git в конце.
-2. Нужен еще и бранч main.
-
-```
-// Validate
-// Подождать пару минут
-$ kubectl get deployment app-aflow-airflow-scheduler -o yaml -n ml-workshop | grep value:.*airflow-dags.git
-```
-
-<br/>
-
-```
-https://airflow.192.168.49.2.nip.io
-```
-
-<br/>
-
-Пусто д.б.
-
-Под
-
-app-aflow-airflow-web-59b954bdfb-rjgb7
-
-красный
-
 <br/>
 
 ### Configuring Airflow runtime images

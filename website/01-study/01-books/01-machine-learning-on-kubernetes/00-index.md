@@ -10,6 +10,23 @@ permalink: /study/books/machine-learning-on-kubernetes/
 
 <br/>
 
+**GitHub:**  
+https://github.com/webmakaka/Machine-Learning-on-Kubernetes
+
+<br/>
+
+**Docker Registry**  
+https://quay.io/ml-on-k8s
+
+https://quay.io/ml-aml-workshop/
+
+<br/>
+
+**Обсуждение**  
+https://t.me/Machine_Learning_on_Kubernetes
+
+<br/>
+
 ### Подготовка окружения
 
 - [Запуск minikube](/study/books/machine-learning-on-kubernetes/environment/run-minikube/)

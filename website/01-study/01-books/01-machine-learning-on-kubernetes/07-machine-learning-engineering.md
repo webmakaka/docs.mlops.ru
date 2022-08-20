@@ -32,7 +32,7 @@ https://jupyterhub.192.168.49.2.nip.io/hub/spawn
 <br/>
 
 ```
-Scikit v1.10 - Elyra Notebook Image.
+Scikit v1.10 - Elyra Notebook Image
 
 Container size: Small
 
