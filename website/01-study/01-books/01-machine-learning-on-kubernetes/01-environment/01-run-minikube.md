@@ -58,3 +58,28 @@ $ {
 
     // Стартовать остановленный minikube
     // $ minikube --profile ${PROFILE} start
+
+<br/>
+
+### Закачиваем образы
+
+```
+$ eval $(minikube docker-env)
+```
+
+<br/>
+
+```
+$ {
+    docker pull quay.io/ml-on-k8s/scikit-notebook:v1.2.0
+    docker pull quay.io/ml-on-k8s/kaniko-container-builder:1.0.0
+    docker pull quay.io/ml-on-k8s/airflow-python-runner:0.0.11
+    docker pull quay.io/ml-on-k8s/elyra-spark:0.0.4
+}
+```
+
+<br/>
+
+```
+eval $(minikube docker-env)
+```

@@ -29,9 +29,10 @@ mlflow                 nginx   mlflow.192.168.49.2.nip.io       192.168.49.2   8
 ```
 // mluser / mluser
 https://jupyterhub.192.168.49.2.nip.io
-```
 
-Select Base Elyra Notebook Image and the Default container size and hit Start server.
+Image: Base Elyra Notebook
+Container size: Default
+```
 
 <br/>
 

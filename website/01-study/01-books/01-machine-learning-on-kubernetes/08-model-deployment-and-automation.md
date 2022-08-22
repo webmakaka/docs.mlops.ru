@@ -383,20 +383,13 @@ https://jupyterhub.192.168.49.2.nip.io/
 <br/>
 
 ```
-Base Elyra Notebook Image
-
+Image: SciKit v.1.10 - Elyra Notebook Image
 Container size: Small
-
-Environment variables
-
-Custom variable
 
 Variable name: AWS_SECRET_ACCESS_KEY
 Variable value: minio123
 
 Secret: no
-
-Start server
 ```
 
 <br/>
@@ -436,6 +429,8 @@ Runtime Images (слева) -> Добавить
 ```
 Name: Kaniko Container Builder
 
+Description: A Kaniko container for building
+
 Source: quay.io/ml-on-k8s/kaniko-container-builder:1.0.0
 
 Image Pull Policy: IfNotPresent
@@ -448,26 +443,13 @@ SAVE & CLOSE
 ```
 Name: Airflow Python Runner
 
+Description: A container with Python runtime
+
 Source: quay.io/ml-on-k8s/airflow-python-runner:0.0.11
 
 Image Pull Policy: IfNotPresent
 
 SAVE & CLOSE
-```
-
-<br/>
-
-```
-eval $(minikube docker-env)
-```
-
-<br/>
-
-```
-$ {
-  docker pull quay.io/ml-on-k8s/kaniko-container-builder:1.0.0
-  docker pull quay.io/ml-on-k8s/airflow-python-runner:0.0.11
-}
 ```
 
 <br/>
@@ -493,10 +475,11 @@ Apache Airflow User Namespace: ml-workshop
 Github API Endpoint: https://api.github.com
 GitHub DAG Repository: webmak1/airflow-dags
 GitHub DAG Repository Branch: main
+Github Personal Access Token: YOUR_GITHUB_TOKEN
 
 
 Cloud Object Storage Endpoint: http://minio-ml-workshop:9000
-Cloud Object Storage User name: minio
+Cloud Object Storage Username: minio
 Cloud Object Storage Password: minio123
 Cloud Object Storage Bucket Name: airflow
 ```

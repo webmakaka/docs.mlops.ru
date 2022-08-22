@@ -32,21 +32,13 @@ https://jupyterhub.192.168.49.2.nip.io/hub/spawn
 <br/>
 
 ```
-Scikit v1.10 - Elyra Notebook Image
-
+Image: SciKit v.1.10 - Elyra Notebook Image
 Container size: Small
-
-Environment variables
-
-Custom variable
-
 
 Variable name: AWS_SECRET_ACCESS_KEY
 Variable value: minio123
 
 Secret: no
-
-Start server
 ```
 
 <br/>

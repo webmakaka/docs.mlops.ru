@@ -10,6 +10,10 @@ permalink: /study/books/machine-learning-on-kubernetes/building-your-data-pipeli
 
 <br/>
 
+На этом шаге подготавливаем данные.
+
+<br/>
+
 Пересоздал environment c 0.
 
 <br/>
@@ -86,6 +90,7 @@ https://minio.192.168.49.2.nip.io
 
 ```
 Buckets -> Create Bucket > airport-data
+Buckets -> Create Bucket > flights-data
 ```
 
 <br/>
@@ -114,7 +119,8 @@ https://jupyterhub.192.168.49.2.nip.io/hub/spawn
 Elyra Notebook Image with Spark
 
 // Large не стартовал. Там запрос на 4 CPU 16 GB
-Container size: Medium
+// Medium не помню. Small отработал после отключения Grafana и Prometheus
+Container size: Small
 
 Start server
 ```
@@ -125,7 +131,9 @@ Clone: https://github.com/webmakaka/Machine-Learning-on-Kubernetes.git
 
 <br/>
 
-Chapter09/explore_data.ipynb
+```
+RUN -> Chapter09/explore_data.ipynb
+```
 
 <br/>
 
@@ -138,3 +146,83 @@ Chapter09/explore_data.ipynb
 <!--
 Replicationcontrollers
 -->
+
+<br/>
+
+```
+RUN -> Chapter09/merge_data.ipynb
+RUN -> Chapter09/clean_data.ipynb
+```
+
+<br/>
+
+https://spark-cluster-mluser.192.168.49.2.nip.io
+
+<br/>
+
+### Building and executing a data pipeline using Airflow
+
+<br/>
+
+https://jupyterhub.192.168.49.2.nip.io/
+
+<br/>
+
+Runtime Images (слева) -> Добавить
+
+<br/>
+
+```
+Name: Airflow Python Runner
+
+Description: A container with Python runtime
+
+Source: quay.io/ml-on-k8s/airflow-python-runner:0.0.11
+
+Image Pull Policy: IfNotPresent
+
+SAVE & CLOSE
+```
+
+<br/>
+
+```
+Name: AirFlow PySpark Runner
+
+Description: A container with notebook and pyspark to enable execution of PySpark code
+
+Source: quay.io/ml-on-k8s/elyra-spark:0.0.4
+
+Image Pull Policy: IfNotPresent
+
+SAVE & CLOSE
+```
+
+<br/>
+
+```
+RUN -> Chapter09\flights.pipeline
+```
+
+<br/>
+
+```
+Pipeline Name: flights
+Runntime Platform: Apache Airflow runtime
+Runtime Configuration: MyAirflow
+```
+
+<br/>
+
+```
+// mluser / mluser
+https://airflow.192.168.49.2.nip.io
+```
+
+<br/>
+
+```
+// minio / minio123
+// Смотрим flights-data (вроде)
+https://minio.192.168.49.2.nip.io
+```

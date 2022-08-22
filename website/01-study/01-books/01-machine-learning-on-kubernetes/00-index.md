@@ -70,5 +70,5 @@ https://t.me/Machine_Learning_on_Kubernetes
 • Chapter 8. Building a Complete ML Project Using the Platform
 
 - [Chapter 9. Building Your Data Pipeline](/study/books/machine-learning-on-kubernetes/building-your-data-pipeline/)
-  • Chapter 10. Building, Deploying, and Monitoring Your Model
+- [Chapter 10. Building, Deploying, and Monitoring Your Model](/study/books/machine-learning-on-kubernetes/building-deploying-and-monitoring-your-model/)
   • Chapter 11. Machine Learning on Kubernetes

@@ -16,26 +16,13 @@ permalink: /
 
 <br/>
 
-[Предлагается совместно почитать, позапускать примеры, обсудить при необходимости](/study/books/machine-learning-on-kubernetes/)
+[Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/study/books/machine-learning-on-kubernetes/)
 
 <br/>
 
 ### Планы
 
-Планируется собирать записи, связанные с автоматизацией процессов машинного обучения.
-
-Таких, как вот это.
-
-https://www.youtube.com/watch?v=Kvxaj6pHeVA
-
-- всякие kubernetes, kubeflow, mlflow etc.
-
-<br/>
-
-### Нужно посмотреть
-
-**Dr. Paul Elvers: Getting Started with MLOps: Best Practices for Production-Ready ML Systems | PyData**  
-https://www.youtube.com/watch?v=Z5uKdHHedls
+Планируется собирать записи, связанные с автоматизацией процессов машинного обучения - всякие kubernetes, kubeflow, mlflow, airflow etc.
 
 <br/>
 
