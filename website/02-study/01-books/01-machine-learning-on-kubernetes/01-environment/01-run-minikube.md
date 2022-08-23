@@ -10,6 +10,11 @@ permalink: /study/books/machine-learning-on-kubernetes/environment/run-minikube/
 
 <br/>
 
+Делаю:  
+22.08.2022
+
+<br/>
+
 ### Technical requirements
 
 <br/>
@@ -21,6 +26,7 @@ permalink: /study/books/machine-learning-on-kubernetes/environment/run-minikube/
 <br/>
 
 ```
+// 8 ядер маловато будет!
 $ export \
     PROFILE=marley-minikube \
     CPUS=8 \
@@ -63,6 +69,8 @@ $ {
 
 ### Закачиваем образы
 
+<br/>
+
 ```
 $ eval $(minikube docker-env)
 ```
@@ -71,15 +79,28 @@ $ eval $(minikube docker-env)
 
 ```
 $ {
+    docker pull quay.io/ml-on-k8s/redis-6:1-25
+    docker pull quay.io/ml-aml-workshop/postgresql-96
+    docker pull quay.io/ml-aml-workshop/mlflow:0.0.2
+
+    docker pull quay.io/ml-on-k8s/airflow:2.2.3.scheduler
+    docker pull quay.io/ml-on-k8s/airflow:2.2.3.web.keycloak
+    docker pull quay.io/ml-on-k8s/airflow:2.2.3.worker
+
+    docker pull quay.io/ml-on-k8s/hellomlflow-manual:1.0.0
+
     docker pull quay.io/ml-on-k8s/scikit-notebook:v1.2.0
+    docker pull quay.io/ml-on-k8s/elyra-spark:0.0.4
+
+    docker pull quay.io/ml-on-k8s/spark:3.2.0
+    docker pull quay.io/ml-on-k8s/spark-operator:1.3.4
+
+    docker pull quay.io/ml-on-k8s/flights-data:5.0
+
+    docker pull quay.io/ml-on-k8s/container-model:2.0.0
+
     docker pull quay.io/ml-on-k8s/kaniko-container-builder:1.0.0
     docker pull quay.io/ml-on-k8s/airflow-python-runner:0.0.11
-    docker pull quay.io/ml-on-k8s/elyra-spark:0.0.4
+
 }
-```
-
-<br/>
-
-```
-eval $(minikube docker-env)
 ```
