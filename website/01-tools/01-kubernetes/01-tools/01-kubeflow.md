@@ -11,7 +11,7 @@ permalink: /tools/kubernetes/tools/kubeflow/
 <br/>
 
 Делаю:  
-23.08.2022
+24.08.2022
 
 <br/>
 
@@ -20,7 +20,7 @@ https://www.youtube.com/watch?v=Zk9T85JWrVk
 
 <br/>
 
-### KFCTL
+### Инсталляция KFCTL
 
 ```
 // v1.2.0
@@ -46,6 +46,11 @@ kfctl v1.2.0-0-gbc038f9
 
 <br/>
 
+// Нужна какая-то старая версия kubernetes.
+// Потом нужно будет проапгрейдить!
+
+<br/>
+
 ```
 $ export \
     PROFILE=marley-minikube \
@@ -53,7 +58,7 @@ $ export \
     MEMORY=30G \
     HDD=80G \
     DRIVER=docker \
-    KUBERNETES_VERSION=v1.24.4
+    KUBERNETES_VERSION=v1.16.0
 ```
 
 <br/>
@@ -90,6 +95,10 @@ $ {
 <!--
 https://github.com/kubeflow/manifests/blob/v1.0-branch/kfdef/kfctl_k8s_istio.yaml
 -->
+
+<br/>
+
+###
 
 ```
 $ export \
