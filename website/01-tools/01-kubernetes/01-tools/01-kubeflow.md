@@ -8,6 +8,10 @@ permalink: /tools/kubernetes/tools/kubeflow/
 
 # Kubeflow
 
+https://github.com/kubeflow/kfctl
+
+https://github.com/kubeflow/pipelines
+
 <br/>
 
 Делаю:  

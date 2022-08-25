@@ -163,3 +163,11 @@ This step is in Failed state with this message: error: error when creating "/tmp
 ### Test Query
 
 https://github.com/intro-to-ml-with-kubeflow/intro-to-ml-with-kubeflow-examples/blob/master/ch2/query-endpoint.py
+
+<br/>
+
+### MINio
+
+```
+$ kubectl port-forward -n kubeflow svc/minio-service 9000:9000
+```
