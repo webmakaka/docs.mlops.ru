@@ -10,12 +10,16 @@ permalink: /tools/kubernetes/tools/kubeflow/
 
 https://github.com/kubeflow/kfctl
 
+https://github.com/kubeflow/manifests
+
 https://github.com/kubeflow/pipelines
+
+https://github.com/kubeflow/example-seldon
 
 <br/>
 
 Делаю:  
-24.08.2022
+28.08.2022
 
 <br/>
 
@@ -50,19 +54,14 @@ kfctl v1.2.0-0-gbc038f9
 
 <br/>
 
-// Нужна какая-то старая версия kubernetes.
-// Потом нужно будет проапгрейдить!
-
-<br/>
-
 ```
 $ export \
     PROFILE=marley-minikube \
-    CPUS=8 \
-    MEMORY=30G \
-    HDD=80G \
+    CPUS=4 \
+    MEMORY=15G \
+    HDD=20G \
     DRIVER=docker \
-    KUBERNETES_VERSION=v1.16.0
+    KUBERNETES_VERSION=v1.21.0
 ```
 
 <br/>
@@ -102,43 +101,36 @@ https://github.com/kubeflow/manifests/blob/v1.0-branch/kfdef/kfctl_k8s_istio.yam
 
 <br/>
 
-###
+```
+$ mkdir -p ~/tmp/kubeflow-manifests
+$ git -C ~/tmp/kubeflow-manifests clone https://github.com/kubeflow/manifests.git --branch v1.5-branch --single-branch
+
+$ cd /home/marley/tmp/kubeflow-manifests/manifests
+```
+
+<!--
 
 ```
-$ export \
-    KF_NAME="marley-kubeflow" \
-    BASE_DIR=~/kubeflow \
-    KF_DIR=${BASE_DIR}/${KF_NAME} \
-    CONFIG_FILE=${KF_DIR}/kfctl_k8s_istio.v1.0.1.yaml \
-    CONFIG_URI=https://raw.githubusercontent.com/kubeflow/manifests/v1.0-branch/kfdef/kfctl_k8s_istio.v1.0.1.yaml
+$ git checkout v1.5.1 -b release-1.5.1
+```
+
+-->
+
+<br/>
+
+```
+$ while ! kustomize build example | kubectl apply -f -; do echo "Retrying to apply resources"; sleep 10; done
 ```
 
 <br/>
 
 ```
-$ mkdir -p ${KF_DIR}
-$ cd ${KF_DIR}
-$ kfctl build -V -f ${CONFIG_URI}
-$ kfctl apply -V -f ${CONFIG_FILE}
+$ kubectl port-forward svc/istio-ingressgateway -n istio-system 8080:80
 ```
 
 <br/>
 
 ```
-$ kubectl -n kubeflow get pods
-$ kubectl -n kubeflow get svc
+// user@example.com / 12341234
+http://localhost:8080
 ```
-
-<br/>
-
-```
-$ kubectl -n kubeflow port-forward -n istio-system svc/istio-ingressgateway 8080:80
-```
-
-<br/>
-
-http://localhost:8080/
-
-<br/>
-
-Namespace: holee
