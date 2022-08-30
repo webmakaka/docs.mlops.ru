@@ -1,0 +1,107 @@
+---
+layout: page
+title: Machine Learning Engineering with MLflow
+description: Machine Learning Engineering with MLflow
+keywords: Machine Learning Engineering with MLflow
+permalink: /study/books/machine-learning-engineering-with-mlflow/
+---
+
+<br/>
+
+# Machine Learning Engineering with MLflow
+
+<br/>
+
+https://github.com/PacktPublishing/Machine-Learning-Engineering-with-MLflow
+
+<br/>
+
+## Introducing MLflow
+
+<br/>
+
+### Getting started with MLflow
+
+<br/>
+
+```
+$ cd ~/tmp
+$ git clone https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
+$ cd ~/tmp/Machine-Learning-Engineering-with-Mlflow/Chapter01
+```
+
+<br/>
+
+```
+$ chmod +x ./run.sh
+$ ./run.sh
+```
+
+<br/>
+
+http://localhost:8888
+
+<br/>
+
+### Developing your first end-to-end pipeline in MLflow
+
+<br/>
+
+```
+$ cd ~/tmp
+$ virtualenv stockpred_env
+$ source stockpred_env/bin/activate
+$ pip install mlflow==1.27
+```
+
+<br/>
+
+```
+$ cd ~/tmp/Machine-Learning-Engineering-with-MLflow/Chapter01/stockpred/
+```
+
+<br/>
+
+```
+$ docker build . -t stockpred
+$ mlflow run .
+$ mlflow ui
+```
+
+<br/>
+
+https://docs.conda.io/en/latest/miniconda.html
+
+<br/>
+
+```
+$ chmod +x ./Miniconda3-latest-Linux-x86_64.sh
+$ ./Miniconda3-latest-Linux-x86_64.sh
+$ conda update -n base -c defaults conda
+```
+
+<br/>
+
+```
+$ pip install sklearn
+```
+
+<br/>
+
+```
+$ mlflow models serve -m ./mlruns/0/b181d1d1b6c04496be50891ce01a0d08/artifacts/model_random_forest/
+```
+
+<br/>
+
+```
+$ curl http://127.0.0.1:5000/invocations -H 'Content-Type:application/json' -d '{"data":[[1,1,1,1,0,1,1,1,0,1,1,1,0,0]]}'
+```
+
+<br/>
+
+**response:**
+
+```
+[1]
+```
