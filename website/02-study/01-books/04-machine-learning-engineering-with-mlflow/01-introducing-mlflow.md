@@ -15,14 +15,6 @@ permalink: /study/books/machine-learning-engineering-with-mlflow/introducing-mlf
 <br/>
 
 ```
-$ cd ~/tmp
-$ git clone https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
-$ cd ~/tmp/Machine-Learning-Engineering-with-MLflow/Chapter01/
-```
-
-<br/>
-
-```
 $ chmod +x ./run.sh
 $ ./run.sh
 ```
@@ -39,7 +31,6 @@ http://localhost:8888
 
 ```
 $ cd ~/tmp
-$ virtualenv stockpred_env
 $ source stockpred_env/bin/activate
 $ pip install mlflow==1.28.*
 ```

@@ -21,11 +21,25 @@ https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
 
 <br/>
 
+```
+$ cd ~/tmp
+$ virtualenv stockpred_env
+$ source stockpred_env/bin/activate
+```
+
+<br/>
+
+```
+$ cd ~/tmp
+$ git clone https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
+```
+
+<br/>
+
 ## Section 1: Problem Framing and Introductions
 
 - [Chapter 1. Introducing MLflow](/study/books/machine-learning-engineering-with-mlflow/introducing-mlflow/)
   • Chapter 2, Your Machine Learning Project
-
 
 <br/>
 
@@ -35,4 +49,4 @@ https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
 
 - [Chapter 4. Experiment Management in MLflow](/study/books/machine-learning-engineering-with-mlflow/experiment-management-in-mlflow/)
 
-- Chapter 5. Managing Models with MLflow
+- [Chapter 5. Managing Models with MLflow](/study/books/machine-learning-engineering-with-mlflow/managing-models-with-mlflow/)
