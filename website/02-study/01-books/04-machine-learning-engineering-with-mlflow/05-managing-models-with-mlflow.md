@@ -21,3 +21,16 @@ $ source stockpred_env/bin/activate
 $ cd ~/tmp/Machine-Learning-Engineering-with-MLflow/Chapter05/gradflow/
 $ make
 ```
+
+<br/>
+
+```
+hyperopt*optimization*
+logistic_regression_mlflow.ipynb
+```
+
+<br/>
+
+```
+Register -> BTC StockPrediction
+```

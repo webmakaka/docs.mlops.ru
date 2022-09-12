@@ -10,6 +10,25 @@ permalink: /study/books/machine-learning-engineering-with-mlflow/
 
 # Machine Learning Engineering with MLflow
 
+<br/>
+
+Возможно, нужно использовать версию:
+
+```
+tensorflow==2.9.2
+```
+
+<br/>
+
+// Инсталляция miniconda
+
+```
+$ weget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.12.0-Linux-x86_64.sh
+$ chmod +x ./Miniconda3-py38_4.12.0-Linux-x86_64.sh
+
+$ ./Miniconda3-py38_4.12.0-Linux-x86_64.sh
+```
+
 <!--
 ```
 $ conda diactivate
@@ -50,3 +69,14 @@ $ git clone https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflo
 - [Chapter 4. Experiment Management in MLflow](/study/books/machine-learning-engineering-with-mlflow/experiment-management-in-mlflow/)
 
 - [Chapter 5. Managing Models with MLflow](/study/books/machine-learning-engineering-with-mlflow/managing-models-with-mlflow/)
+
+<br/>
+
+## Section 3: Machine Learning in Production
+
+• Chapter 6. Introducing ML Systems Architecture
+
+- [Chapter 7. Data and Feature Management](/study/books/machine-learning-engineering-with-mlflow/data-and-feature-management/)
+- [Chapter 8. Training Models with MLflow](/study/books/machine-learning-engineering-with-mlflow/training-models-with-mlflow/)
+
+- [Chapter 9. Deployment and Inference with MLflow](/study/books/machine-learning-engineering-with-mlflow/deployment-and-inference-with-mlflow/)
