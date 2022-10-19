@@ -81,14 +81,20 @@ keycloak   nginx   keycloak.192.168.49.2.nip.io   192.168.49.2   80, 443   4m8s
 <br/>
 
 // Administration Console
-// admin/admin
+// admin / admin
 https://keycloak.192.168.49.2.nip.io/auth/
 
 <br/>
 
 ### Importing the Keycloak configuration for the ODH components
 
-keycloak -> import -> Chapter05/realm-export.json -> If a resource exists - Skip -> Import
+```
+Keycloak WEB UI -> import -> Chapter05/realm-export.json
+
+- If a resource exists - Skip
+
+Import
+```
 
 <br/>
 

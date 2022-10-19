@@ -31,7 +31,7 @@ $ ./Miniconda3-py38_4.12.0-Linux-x86_64.sh
 
 <!--
 ```
-$ conda diactivate
+$ conda deactivate
 ``` -->
 
 <br/>

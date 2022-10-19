@@ -11,7 +11,7 @@ permalink: /study/books/machine-learning-on-kubernetes/environment/run-minikube/
 <br/>
 
 Делаю:  
-22.08.2022
+13.09.2022
 
 <br/>
 

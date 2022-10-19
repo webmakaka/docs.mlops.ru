@@ -13,7 +13,7 @@ permalink: /study/books/machine-learning-on-kubernetes/environment/installing-th
 ```
 $ cd ~/tmp/
 $ git clone https://github.com/webmakaka/Machine-Learning-on-Kubernetes.git
-$ cd Machine-Learning-on-Kubernetes/
+$ cd ~/tmp/Machine-Learning-on-Kubernetes/
 ```
 
 <br/>

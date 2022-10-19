@@ -65,5 +65,8 @@ $ docker build -t psystock_docker_training_image .
 ```
 // $ export TRACKING_SERVER_URI=http://host.docker.internal:5000
 $ export TRACKING_SERVER_URI=localhost:5000
+
+
+// Ошибка
 $ docker run -p 5000:5000 -e MLflow_TRACKING_SERVER=$TRACKING_SERVER_URI psystock_docker_training_image
 ```
