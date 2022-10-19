@@ -19,9 +19,9 @@ permalink: /study/books/machine-learning-on-kubernetes/environment/run-minikube/
 
 <br/>
 
-• A central processing unit (CPU) with at least four cores; eight are recommended
-• Memory of at least 16 gigabytes (GB); 32 GB is recommended
-• Disk with available space of at least 60 GB
+• A central processing unit (CPU) with at least four cores; eight are recommended  
+• Memory of at least 16 gigabytes (GB); 32 GB is recommended  
+• Disk with available space of at least 60 GB  
 
 <br/>
 
