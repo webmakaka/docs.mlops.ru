@@ -19,12 +19,19 @@ https://github.com/kubeflow/example-seldon
 <br/>
 
 Делаю:  
-28.08.2022
+03.03.2023
+
+**Не работает!**  
+Раньше работало!!!
 
 <br/>
 
 **Основано на реальных записях:**  
 https://www.youtube.com/watch?v=Zk9T85JWrVk
+
+<br/>
+
+**Требуется kustomize [Версии 4.5.7](//gitops.ru/tools/containers/kubernetes/tools/kustomize/)**
 
 <br/>
 
@@ -38,6 +45,7 @@ $ LATEST_KFCTL_VERSION=$(curl -s https://api.github.com/repos/kubeflow/kfctl/rel
 $ echo ${LATEST_KFCTL_VERSION}
 
 $ wget  -qO- https://github.com/kubeflow/kfctl/releases/download/${LATEST_KFCTL_VERSION}/kfctl_v1.2.0-0-gbc038f9_linux.tar.gz | tar zxvf -  -C /tmp/
+
 $ sudo mv /tmp/kfctl /usr/local/bin
 ```
 
@@ -55,6 +63,7 @@ kfctl v1.2.0-0-gbc038f9
 <br/>
 
 ```
+// 4 ядер мало! Даже notebook не запустился!
 $ export \
     PROFILE=marley-minikube \
     CPUS=4 \
@@ -87,11 +96,13 @@ $ {
 
 <br/>
 
-    // При необходимости можно будет удалить профиль и все созданное в профиле следующей командой
-    // $ minikube --profile ${PROFILE} stop && minikube --profile ${PROFILE} delete
+```
+// При необходимости можно будет удалить профиль и все созданное в профиле следующей командой
+// $ minikube --profile ${PROFILE} stop && minikube --profile ${PROFILE} delete
 
-    // Стартовать остановленный minikube
-    // $ minikube --profile ${PROFILE} start
+// Стартовать остановленный minikube
+// $ minikube --profile ${PROFILE} start
+```
 
 <br/>
 
@@ -109,11 +120,9 @@ $ cd /home/marley/tmp/kubeflow-manifests/manifests
 ```
 
 <!--
-
 ```
 $ git checkout v1.5.1 -b release-1.5.1
 ```
-
 -->
 
 <br/>
