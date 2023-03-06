@@ -20,7 +20,7 @@ https://github.com/webmakaka/Kubeflow-for-Machine-Learning-From-Lab-to-Productio
 
 <br/>
 
-### [Инсталляция KFCTL](/tools/kubernetes/tools/kubeflow/)
+### [Инсталляция KFCTL](/tools/kubernetes/kubeflow/)
 
 <!-- <br/>
 

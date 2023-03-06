@@ -3,18 +3,10 @@ layout: page
 title: Установка Kubeflow в Minikube
 description: Установка Kubeflow в Minikube
 keywords: minikube, kubeflow, setup
-permalink: /tools/kubernetes/tools/kubeflow/setup/
+permalink: /tools/kubernetes/kubeflow/setup/
 ---
 
 # Установка Kubeflow в Minikube
-
-https://github.com/kubeflow/kfctl
-
-https://github.com/kubeflow/manifests
-
-https://github.com/kubeflow/pipelines
-
-https://github.com/kubeflow/example-seldon
 
 <br/>
 
@@ -63,7 +55,7 @@ kfctl v1.2.0-0-gbc038f9
 <br/>
 
 ```
-// 4 ядер мало! Даже notebook не запустился!
+// 4 ядер мало! Notebook с трудом запустился!
 $ export \
     PROFILE=marley-minikube \
     CPUS=4 \
@@ -117,8 +109,6 @@ $ mkdir -p ~/tmp/kubeflow-manifests
 
 // Если нужно использовать какой-то специфичный бранч
 // $ git -C ~/tmp/kubeflow-manifests clone https://github.com/kubeflow/manifests.git --branch v1.5-branch --single-branch
-
-
 
 // коммит f7dc14e359fb8ab07b5493cf2d6f1f8583d56f7f
 $ git -C ~/tmp/kubeflow-manifests clone https://github.com/kubeflow/manifests.git
