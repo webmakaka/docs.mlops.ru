@@ -8,6 +8,25 @@ permalink: /
 
 <br/>
 
+### [Book] [Faisal Masood, Ross Brigoli] Machine Learning on Kubernetes [ENG, 2022]
+
+<br/>
+
+![Machine Learning on Kubernetes](/img/Machine-Learning-on-Kubernetes.png 'Machine Learning on Kubernetes'){: .center-image }
+
+<br/>
+
+Спустя год, что-то поменялось.
+Не могу развренуть на kubernetes "Open Data Hub Operator".
+
+Буду признателен, если кто проконсультирует.
+
+<br/>
+
+[Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/study/books/machine-learning-on-kubernetes/)
+
+<br/>
+
 ### [Book][oreilly][Trevor Grant, Holden Karau, Boris Lublinsky, Richard Liu, Ilan Filonenko] Kubeflow for Machine Learning From Lab to Production [ENG, 2020]
 
 <br/>
@@ -17,18 +36,6 @@ permalink: /
 <br/>
 
 [Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/study/books/kubeflow-for-machine-learning-from-lab-to-production/)
-
-<br/>
-
-### [Book] [Faisal Masood, Ross Brigoli] Machine Learning on Kubernetes [ENG, 2022]
-
-<br/>
-
-![Machine Learning on Kubernetes](/img/Machine-Learning-on-Kubernetes.png 'Machine Learning on Kubernetes'){: .center-image }
-
-<br/>
-
-[Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/study/books/machine-learning-on-kubernetes/)
 
 <br/>
 

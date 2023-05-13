@@ -10,7 +10,7 @@ permalink: /study/books/machine-learning-on-kubernetes/
 
 <br/>
 
-**[GitHub](https://github.com/webmakaka/Machine-Learning-on-Kubernetes/tree/master/docs)**
+**[GitHub](https://github.com/webmakaka/Machine-Learning-on-Kubernetes/tree/main/docs)**
 
 <br/>
 
