@@ -25,9 +25,7 @@ https://www.youtube.com/watch?v=E26IaD7bNXg
 <br/>
 
 Спустя год, что-то поменялось.
-Не могу развренуть на kubernetes "Open Data Hub Operator".
-
-Буду признателен, если кто проконсультирует.
+Не могу развренуть на kubernetes. Работаем над этим на выходных.
 
 <br/>
 
