@@ -14,7 +14,7 @@ permalink: /tools/python/nexus/
 
 <br/>
 
-![Nexus Repo](/img/docs/devtools/python/nexus/pic-nexus3-python-01.png 'Nexus Repo'){: .center-image }
+![Nexus Repo](/img/tools/python/nexus/pic-nexus3-python-01.png 'Nexus Repo'){: .center-image }
 
 <br/>
 
