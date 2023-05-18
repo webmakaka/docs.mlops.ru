@@ -8,6 +8,14 @@ permalink: /
 
 <br/>
 
+### [YouTube] Best MLOps Practices for Building End-to-End Machine Learning Computer Vision Projects with Alex Kim [ENG, 2023]
+
+https://www.youtube.com/watch?v=E26IaD7bNXg
+
+(Надо найти время, чтобы посмотреть)
+
+<br/>
+
 ### [Book] [Faisal Masood, Ross Brigoli] Machine Learning on Kubernetes [ENG, 2022]
 
 <br/>
