@@ -8,6 +8,12 @@ permalink: /
 
 <br/>
 
+Ищу работу на AI проекте с релокацией из РФ. <br/>
+Наиболее интересны направления: <br/>
+Self-driving car / RoboTech <br/>
+
+<br/>
+
 ### [YouTube] Best MLOps Practices for Building End-to-End Machine Learning Computer Vision Projects with Alex Kim [ENG, 2023]
 
 https://www.youtube.com/watch?v=E26IaD7bNXg
