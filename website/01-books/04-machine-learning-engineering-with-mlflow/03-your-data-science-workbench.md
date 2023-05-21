@@ -3,7 +3,7 @@ layout: page
 title: Chapter 3. Your Data Science Workbench
 description: Chapter 3. Your Data Science Workbench
 keywords: Chapter 3. Your Data Science Workbench
-permalink: /study/books/machine-learning-engineering-with-mlflow/your-data-science-workbench/
+permalink: /books/machine-learning-engineering-with-mlflow/your-data-science-workbench/
 ---
 
 # Chapter 3. Your Data Science Workbench

@@ -11,6 +11,7 @@ permalink: /
 Ищу работу на AI проекте с релокацией из РФ. <br/>
 Наиболее интересны направления: <br/>
 Self-driving car / RoboTech <br/>
+<a href="//programmist.net">Подробнее</a><br/>
 
 <br/>
 
@@ -35,14 +36,14 @@ https://www.youtube.com/watch?v=E26IaD7bNXg
 <br/>
 
 Спустя год, что-то поменялось.
-Не могу развренуть на kubernetes. 
+Не могу развренуть на kubernetes.
 Работаю над этим на выходных.
 
 Буду признателен, если кто сможет поделиться скриптами с более новыми версиями программ.
 
 <br/>
 
-[Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/study/books/machine-learning-on-kubernetes/)
+[Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/books/machine-learning-on-kubernetes/)
 
 <br/>
 
@@ -54,7 +55,7 @@ https://www.youtube.com/watch?v=E26IaD7bNXg
 
 <br/>
 
-[Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/study/books/kubeflow-for-machine-learning-from-lab-to-production/)
+[Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/books/kubeflow-for-machine-learning-from-lab-to-production/)
 
 <br/>
 

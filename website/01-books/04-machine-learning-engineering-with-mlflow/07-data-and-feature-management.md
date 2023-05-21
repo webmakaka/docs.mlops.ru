@@ -3,7 +3,7 @@ layout: page
 title: Chapter 7. Data and Feature Management
 description: Chapter 7. Data and Feature Management
 keywords: Chapter 7. Data and Feature Management
-permalink: /study/books/machine-learning-engineering-with-mlflow/data-and-feature-management/
+permalink: /books/machine-learning-engineering-with-mlflow/data-and-feature-management/
 ---
 
 # Chapter 7. Data and Feature Management

@@ -3,7 +3,7 @@ layout: page
 title: Chapter 1. Introducing MLflow]
 description: Chapter 1. Introducing MLflow]
 keywords: Chapter 1. Introducing MLflow]
-permalink: /study/books/machine-learning-engineering-with-mlflow/introducing-mlflow/
+permalink: /books/machine-learning-engineering-with-mlflow/introducing-mlflow/
 ---
 
 # Chapter 1. Introducing MLflow]

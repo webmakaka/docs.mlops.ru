@@ -3,7 +3,7 @@ layout: page
 title: Chapter 4. Experiment Management in MLflow
 description: Chapter 4. Experiment Management in MLflow
 keywords: Chapter 4. Experiment Management in MLflow
-permalink: /study/books/machine-learning-engineering-with-mlflow/experiment-management-in-mlflow/
+permalink: /books/machine-learning-engineering-with-mlflow/experiment-management-in-mlflow/
 ---
 
 # Chapter 4. Experiment Management in MLflow

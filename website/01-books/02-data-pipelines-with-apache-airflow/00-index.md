@@ -3,7 +3,7 @@ layout: page
 title: Data Pipelines with Apache Airflow
 description: Data Pipelines with Apache Airflow
 keywords: Data Pipelines with Apache Airflow
-permalink: /study/books/data-pipelines-with-apache-airflow/
+permalink: /books/data-pipelines-with-apache-airflow/
 ---
 
 # Data Pipelines with Apache Airflow

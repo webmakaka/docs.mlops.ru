@@ -3,7 +3,7 @@ layout: page
 title: Chapter 8. Training Models with MLflow
 description: Chapter 8. Training Models with MLflow
 keywords: Chapter 8. Training Models with MLflow
-permalink: /study/books/machine-learning-engineering-with-mlflow/training-models-with-mlflow/
+permalink: /books/machine-learning-engineering-with-mlflow/training-models-with-mlflow/
 ---
 
 # Chapter 8. Training Models with MLflow

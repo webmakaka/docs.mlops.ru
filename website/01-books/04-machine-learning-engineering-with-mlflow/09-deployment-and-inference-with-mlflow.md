@@ -3,7 +3,7 @@ layout: page
 title: Chapter 9. Deployment and Inference with MLflow
 description: Chapter 9. Deployment and Inference with MLflow
 keywords: Chapter 9. Deployment and Inference with MLflow
-permalink: /study/books/machine-learning-engineering-with-mlflow/deployment-and-inference-with-mlflow/
+permalink: /books/machine-learning-engineering-with-mlflow/deployment-and-inference-with-mlflow/
 ---
 
 # Chapter 9. Deployment and Inference with MLflow

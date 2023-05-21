@@ -3,7 +3,7 @@ layout: page
 title: Kubeflow for Machine Learning From Lab to Production
 description: Kubeflow for Machine Learning From Lab to Production
 keywords: Kubeflow for Machine Learning From Lab to Production
-permalink: /study/books/kubeflow-for-machine-learning-from-lab-to-production/run/
+permalink: /books/kubeflow-for-machine-learning-from-lab-to-production/run/
 ---
 
 # Kubeflow for Machine Learning From Lab to Production

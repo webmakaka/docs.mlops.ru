@@ -3,7 +3,7 @@ layout: page
 title: Kubeflow for Machine Learning From Lab to Production - Kubeflow Pipelines
 description: Kubeflow for Machine Learning From Lab to Production - Kubeflow Pipelines
 keywords: Kubeflow for Machine Learning From Lab to Production - Kubeflow Pipelines
-permalink: /study/books/kubeflow-for-machine-learning-from-lab-to-production/kubeflow-pipelines/
+permalink: /books/kubeflow-for-machine-learning-from-lab-to-production/kubeflow-pipelines/
 ---
 
 # Chapter 04. Kubeflow Pipelines

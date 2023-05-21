@@ -3,7 +3,7 @@ layout: page
 title: Kubeflow for Machine Learning From Lab to Production
 description: Kubeflow for Machine Learning From Lab to Production
 keywords: Kubeflow for Machine Learning From Lab to Production
-permalink: /study/books/kubeflow-for-machine-learning-from-lab-to-production/
+permalink: /books/kubeflow-for-machine-learning-from-lab-to-production/
 ---
 
 <br/>
@@ -22,10 +22,10 @@ https://github.com/moorissa/medium/tree/master/items-recommender
 
 <br/>
 
-- [Подготовка окружения](/study/books/kubeflow-for-machine-learning-from-lab-to-production/environment/)
+- [Подготовка окружения](/books/kubeflow-for-machine-learning-from-lab-to-production/environment/)
 
 <br/>
 
-- [Chapter 04. Kubeflow Pipelines](/study/books/kubeflow-for-machine-learning-from-lab-to-production/kubeflow-pipelines/)
+- [Chapter 04. Kubeflow Pipelines](/books/kubeflow-for-machine-learning-from-lab-to-production/kubeflow-pipelines/)
 
-- [Chapter 05. Data and Feature Preparation](/study/books/kubeflow-for-machine-learning-from-lab-to-production/data-and-feature-preparation/)
+- [Chapter 05. Data and Feature Preparation](/books/kubeflow-for-machine-learning-from-lab-to-production/data-and-feature-preparation/)
