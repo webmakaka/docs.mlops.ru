@@ -11,7 +11,6 @@ permalink: /
 Ищу работу на AI проекте с релокацией из РФ. <br/>
 Наиболее интересны направления: <br/>
 Self-driving car / RoboTech <br/>
-<a href="//programmist.net">Подробнее</a><br/>
 
 <br/>
 
