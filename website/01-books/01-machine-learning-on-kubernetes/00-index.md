@@ -29,6 +29,10 @@ https://hub.docker.com/r/bitnami/airflow-scheduler
 https://hub.docker.com/r/bitnami/airflow-exporter
 ```
 
+### [Nana] Kubernetes Operator simply explained in 10 mins
+
+https://www.youtube.com/watch?v=ha3LjlD6g7g
+
 <br/>
 
 ### What is an Operator? Kubernetes & OpenShift Operators Explained.
