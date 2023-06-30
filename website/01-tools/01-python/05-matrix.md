@@ -99,3 +99,31 @@ $ python -m synapse.app.homeserver \
 ```
 http://localhost:8008/_matrix/static/
 ```
+
+<br/>
+
+### Кофиг для логирования в консоль
+
+**log.config**
+
+```
+version: 1
+formatters:
+  precise:
+    format: '%(asctime)s - %(name)s - %(lineno)d - %(levelname)s - %(request)s - %(message)s'
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: precise
+
+loggers:
+    synapse.storage.SQL:
+      level: INFO
+
+root:
+    level: INFO
+    handlers: [console]
+
+disable_existing_loggers: false
+```

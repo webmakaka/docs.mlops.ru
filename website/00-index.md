@@ -22,6 +22,14 @@ https://www.youtube.com/watch?v=E26IaD7bNXg
 
 <br/>
 
+### [YouTube] Ashutosh Tripathi
+
+https://www.youtube.com/@AshutoshTripathi_AI/videos
+
+(Надо найти время, чтобы посмотреть)
+
+<br/>
+
 ### [Book] [Faisal Masood, Ross Brigoli] Machine Learning on Kubernetes [ENG, 2022]
 
 <br/>
@@ -55,6 +63,14 @@ https://www.youtube.com/watch?v=E26IaD7bNXg
 <br/>
 
 [Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/books/kubeflow-for-machine-learning-from-lab-to-production/)
+
+<br/>
+
+### [Book] Machine Learning Engineering with MLflow
+
+<br/>
+
+https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
 
 <br/>
 
