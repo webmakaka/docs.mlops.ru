@@ -22,7 +22,7 @@ https://www.youtube.com/watch?v=E26IaD7bNXg
 
 <br/>
 
-### [YouTube] Ashutosh Tripathi
+### [YouTube] Ashutosh Tripathi [ENG, 2023]
 
 https://www.youtube.com/@AshutoshTripathi_AI/videos
 
