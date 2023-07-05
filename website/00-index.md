@@ -24,9 +24,37 @@ https://www.youtube.com/watch?v=E26IaD7bNXg
 
 ### [YouTube] Ashutosh Tripathi [ENG, 2023]
 
-https://www.youtube.com/@AshutoshTripathi_AI/videos
+**kubeflow**  
+https://www.youtube.com/watch?v=u1yxFxje_ts&list=PLwFaZuSL_mfpSf3al_ENfQijwsJNVYXJb
+
+**mlflow**  
+https://www.youtube.com/watch?v=r0do1KVEGqM&list=PLwFaZuSL_mfrCjOdA6I--wC13Hj7eNRYU
 
 (Надо найти время, чтобы посмотреть)
+
+<br/>
+
+### [Book][Trevor Grant, Holden Karau, Boris Lublinsky, Richard Liu, Ilan Filonenko] Kubeflow for Machine Learning From Lab to Production [ENG, 2020]
+
+<br/>
+
+![Machine Learning on Kubernetes](/img/Kubeflow-for-Machine-Learning.jpeg 'Machine Learning on Kubernetes'){: .center-image }
+
+<br/>
+
+[Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/books/kubeflow-for-machine-learning-from-lab-to-production/)
+
+<br/>
+
+### [Book] Machine Learning Engineering with MLflow [ENG, 2021]
+
+<br/>
+
+![Machine Learning Engineering with MLflow](/img/Machine-Learning-Engineering-with-MLflow.jpeg 'Machine Learning Engineering with MLflow'){: .center-image }
+
+<br/>
+
+https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
 
 <br/>
 
@@ -46,27 +74,7 @@ https://www.youtube.com/@AshutoshTripathi_AI/videos
 
 <br/>
 
-[Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/books/machine-learning-on-kubernetes/)
-
-<br/>
-
-### [Book][oreilly][Trevor Grant, Holden Karau, Boris Lublinsky, Richard Liu, Ilan Filonenko] Kubeflow for Machine Learning From Lab to Production [ENG, 2020]
-
-<br/>
-
-![Machine Learning on Kubernetes](/img/Kubeflow-for-Machine-Learning.jpeg 'Machine Learning on Kubernetes'){: .center-image }
-
-<br/>
-
-[Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/books/kubeflow-for-machine-learning-from-lab-to-production/)
-
-<br/>
-
-### [Book] Machine Learning Engineering with MLflow
-
-<br/>
-
-https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
+[Раскопки](/books/machine-learning-on-kubernetes/)
 
 <br/>
 
