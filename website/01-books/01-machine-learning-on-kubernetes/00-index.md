@@ -19,7 +19,7 @@ https://quay.io/ml-on-k8s
 
 https://quay.io/ml-aml-workshop/
 
-<br/>
+<!-- <br/>
 
 ```
 AirFlow
@@ -74,4 +74,4 @@ operators   install-mctbs   opendatahub-operator.v1.1.1   Automatic   true
 
 ```
 $ kubectl get packagemanifests
-```
+``` -->
