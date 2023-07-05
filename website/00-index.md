@@ -74,7 +74,7 @@ https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
 
 <br/>
 
-### ~[Book][Trevor Grant, Holden Karau, Boris Lublinsky, Richard Liu, Ilan Filonenko] Kubeflow for Machine Learning From Lab to Production [ENG, 2020]~
+### ~~[Book][Trevor Grant, Holden Karau, Boris Lublinsky, Richard Liu, Ilan Filonenko] Kubeflow for Machine Learning From Lab to Production [ENG, 2020]~~
 
 <br/>
 
