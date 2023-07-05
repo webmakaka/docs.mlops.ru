@@ -14,6 +14,12 @@ Self-driving car / RoboTech <br/>
 
 <br/>
 
+### [YouTube] Airflow Tutorial for Beginners - Full Course in 2 Hours [ENG, 2022]
+
+https://www.youtube.com/watch?v=K9AnJ9_ZAXE
+
+<br/>
+
 ### [YouTube] Best MLOps Practices for Building End-to-End Machine Learning Computer Vision Projects with Alex Kim [ENG, 2023]
 
 https://www.youtube.com/watch?v=E26IaD7bNXg
@@ -24,11 +30,9 @@ https://www.youtube.com/watch?v=E26IaD7bNXg
 
 ### [YouTube] Ashutosh Tripathi [ENG, 2023]
 
-**kubeflow**  
-https://www.youtube.com/watch?v=u1yxFxje_ts&list=PLwFaZuSL_mfpSf3al_ENfQijwsJNVYXJb
+[**mlflow**](/courses/mlflow/)
 
-**mlflow**  
-https://www.youtube.com/watch?v=r0do1KVEGqM&list=PLwFaZuSL_mfrCjOdA6I--wC13Hj7eNRYU
+[**kubeflow**](/courses/kubeflow/)
 
 (Надо найти время, чтобы посмотреть)
 

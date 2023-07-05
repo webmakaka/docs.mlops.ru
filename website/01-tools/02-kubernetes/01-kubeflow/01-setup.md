@@ -11,15 +11,7 @@ permalink: /tools/kubernetes/kubeflow/setup/
 <br/>
 
 Делаю:  
-06.03.2023
-
-**Не работает!**  
-Раньше работало!!!
-
-<br/>
-
-**Основано на реальных записях:**  
-https://www.youtube.com/watch?v=Zk9T85JWrVk
+05.07.2023
 
 <br/>
 
@@ -59,74 +51,102 @@ kfctl v1.2.0-0-gbc038f9
 $ export \
     PROFILE=marley-minikube \
     CPUS=4 \
-    MEMORY=15G \
+    MEMORY=12G \
     HDD=20G \
     DRIVER=docker \
-    KUBERNETES_VERSION=v1.21.0
+    KUBERNETES_VERSION=v1.27.3
+```
+
+<br/>
+
+[Как запускать](//gitops.ru/tools/containers/kubernetes/minikube/setup/)
+
+<br/>
+
+**По инструкции:**  
+https://www.kubeflow.org/docs/components/pipelines/v1/installation/localcluster-deployment/#deploying-kubeflow-pipelines
+
+**Для версии v2:**  
+https://www.kubeflow.org/docs/components/pipelines/v2/installation/quickstart/
+
+<br/>
+
+```
+$ export PIPELINE_VERSION=2.0.0
+
+$ kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/cluster-scoped-resources?ref=$PIPELINE_VERSION"
+
+$ kubectl wait --for condition=established --timeout=60s crd/applications.app.k8s.io
+
+$ kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/env/platform-agnostic-pns?ref=$PIPELINE_VERSION"
 ```
 
 <br/>
 
 ```
-$ {
-    minikube --profile ${PROFILE} config set memory ${MEMORY}
-    minikube --profile ${PROFILE} config set cpus ${CPUS}
-    minikube --profile ${PROFILE} config set disk-size ${HDD}
-
-    minikube --profile ${PROFILE} config set driver ${DRIVER}
-
-    minikube --profile ${PROFILE} config set kubernetes-version ${KUBERNETES_VERSION}
-    minikube start --profile ${PROFILE} --embed-certs
-
-    // Enable ingress
-    minikube addons --profile ${PROFILE} enable ingress
-
-    // Enable registry
-    // minikube addons --profile ${PROFILE} enable registry
-}
+$ k9s -n kubeflow
 ```
 
 <br/>
 
 ```
-// При необходимости можно будет удалить профиль и все созданное в профиле следующей командой
-// $ minikube --profile ${PROFILE} stop && minikube --profile ${PROFILE} delete
-
-// Стартовать остановленный minikube
-// $ minikube --profile ${PROFILE} start
+kubectl get pods -n kubeflow
+NAME                                              READY   STATUS    RESTARTS        AGE
+cache-deployer-deployment-64dc947fc7-7w6fs        1/1     Running   0               11m
+cache-server-7f7d6bfb55-fbb85                     1/1     Running   0               11m
+metadata-envoy-deployment-6dcd4ddcb8-bpq2l        1/1     Running   0               11m
+metadata-grpc-deployment-5644fb9768-zwwdc         1/1     Running   4 (119s ago)    11m
+metadata-writer-9c4488669-62h2q                   1/1     Running   1 (105s ago)    11m
+minio-55464b6ddb-8m2dl                            1/1     Running   0               11m
+ml-pipeline-5b8b594744-sj9xj                      1/1     Running   1 (3m12s ago)   11m
+ml-pipeline-persistenceagent-545d5c6786-w8s4v     1/1     Running   1 (2m19s ago)   11m
+ml-pipeline-scheduledworkflow-8f9b7654d-hv4sk     1/1     Running   0               11m
+ml-pipeline-ui-7c4cf85598-b29kr                   1/1     Running   0               11m
+ml-pipeline-viewer-crd-589c6c6569-qn9br           1/1     Running   0               11m
+ml-pipeline-visualizationserver-9fcfbd447-qwmv5   1/1     Running   0               11m
+mysql-7d8b8ff4f4-bm7gl                            1/1     Running   0               11m
+workflow-controller-589ff7c479-tfsg5              1/1     Running   0               11m
 ```
 
 <br/>
+
+```
+$ kubectl port-forward -n kubeflow svc/ml-pipeline-ui 8080:80
+```
+
+<br/>
+
+```
+http://localhost:8080
+```
 
 <!--
-https://github.com/kubeflow/manifests/blob/v1.0-branch/kfdef/kfctl_k8s_istio.yaml
--->
 
 <br/>
 
 ```
 $ mkdir -p ~/tmp/kubeflow-manifests
+$ cd ~/tmp/kubeflow-manifests
 
 // Если нужно использовать какой-то специфичный бранч
 // $ git -C ~/tmp/kubeflow-manifests clone https://github.com/kubeflow/manifests.git --branch v1.5-branch --single-branch
 
-// коммит f7dc14e359fb8ab07b5493cf2d6f1f8583d56f7f
+
 $ git -C ~/tmp/kubeflow-manifests clone https://github.com/kubeflow/manifests.git
+
+$ git reset --hard f7dc14e359fb8ab07b5493cf2d6f1f8583d56f7f
 
 $ cd ~/tmp/kubeflow-manifests/manifests
 ```
 
-<!--
-```
-$ git checkout v1.5.1 -b release-1.5.1
-```
--->
 
 <br/>
 
 ```
 $ while ! kustomize build example | kubectl apply -f -; do echo "Retrying to apply resources"; sleep 10; done
 ```
+
+
 
 <br/>
 
@@ -179,3 +199,5 @@ training-operator-7954979fd4-zlntj                     1/1     Running   0      
 volumes-web-app-deployment-5cddf6cd78-hf6gq            2/2     Running   0          18m
 workflow-controller-6b9b6c5b46-mnb6n                   2/2     Running   1          18m
 ```
+
+-->

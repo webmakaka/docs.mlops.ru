@@ -55,11 +55,6 @@ OLM GitHub: https://github.com/operator-framework/operator-lifecycle-manager
 OperatorHub: https://operatorhub.io/
 ```
 
-<br/>
-
-Качнул книгу: The Kubernetes Operator Framework Book: Overcome complex Kubernetes cluster management challenges with automation toolkits English | 2022 | ISBN: 978-1803232850 | 328 Pages.
-
-Все, чтобы починить платформу из книги Machine Learning on Kubernetes.
 
 <br/>
 

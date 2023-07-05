@@ -11,7 +11,7 @@ permalink: /tools/python/virtualenv/
 <br/>
 
 Делаю:  
-27.01.2023
+05.07.2023
 
 <br/>
 
@@ -157,6 +157,9 @@ $ export PROJECT_NAME=<MY_NEW_PROJECT_NAME>
 $ pyenv virtualenv ${PYTHON_VERSION} ${PROJECT_NAME}-env
 
 $ source ${PYENV_ROOT}/versions/${PROJECT_NAME}-env/bin/activate
+
+$ mkdir -p  ~/projects/dev/python/${PROJECT_NAME}
+$ cd ~/projects/dev/python/${PROJECT_NAME}
 ```
 
 <br/>
