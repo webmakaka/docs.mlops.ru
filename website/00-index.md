@@ -54,6 +54,10 @@ https://www.youtube.com/watch?v=r0do1KVEGqM&list=PLwFaZuSL_mfrCjOdA6I--wC13Hj7eN
 
 <br/>
 
+Прочита, ничего не помню. Нужно перечитывать.
+
+<br/>
+
 https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
 
 <br/>
@@ -62,15 +66,19 @@ https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
 
 <br/>
 
+**Linux, Docker, Minikube, Jupyter, AirFlow, MlFlow, MinIO, Spark, Seldon, Postgres, KeyCloak, Prometheus, Grafana**
+
+<br/>
+
 ![Machine Learning on Kubernetes](/img/Machine-Learning-on-Kubernetes.png 'Machine Learning on Kubernetes'){: .center-image }
 
 <br/>
 
-Интересная книга. Мне понравилась.
+Интересная книга. Мне понравилась. 2 раза прочитал. Кучу ошибок исправил.
 
 <br/>
 
-Последний шаг не заработал (надеюсь, что пока). В grafana не отображаются данные. А так, все остально удалось запустить.
+Последний шаг не заработал (надеюсь, что пока). В grafana не отображаются данные. А так, все остальное как-то да удалось запустить.
 
 <br/>
 
