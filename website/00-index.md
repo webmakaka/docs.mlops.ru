@@ -34,18 +34,6 @@ https://www.youtube.com/watch?v=r0do1KVEGqM&list=PLwFaZuSL_mfrCjOdA6I--wC13Hj7eN
 
 <br/>
 
-### [Book][Trevor Grant, Holden Karau, Boris Lublinsky, Richard Liu, Ilan Filonenko] Kubeflow for Machine Learning From Lab to Production [ENG, 2020]
-
-<br/>
-
-![Machine Learning on Kubernetes](/img/Kubeflow-for-Machine-Learning.jpeg 'Machine Learning on Kubernetes'){: .center-image }
-
-<br/>
-
-[Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/books/kubeflow-for-machine-learning-from-lab-to-production/)
-
-<br/>
-
 ### [Book] Machine Learning Engineering with MLflow [ENG, 2021]
 
 <br/>
@@ -54,7 +42,7 @@ https://www.youtube.com/watch?v=r0do1KVEGqM&list=PLwFaZuSL_mfrCjOdA6I--wC13Hj7eN
 
 <br/>
 
-Прочита, ничего не помню. Нужно перечитывать.
+Прочитал, ничего не помню. Нужно перечитывать.
 
 <br/>
 
@@ -66,7 +54,7 @@ https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
 
 <br/>
 
-**Linux, Docker, Minikube, Jupyter, AirFlow, MlFlow, MinIO, Spark, Seldon, Postgres, KeyCloak, Prometheus, Grafana**
+**tags: Linux, Docker, Minikube, Jupyter, AirFlow, MlFlow, MinIO, Spark, Seldon, Postgres, KeyCloak, Prometheus, Grafana**
 
 <br/>
 
@@ -83,6 +71,22 @@ https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
 <br/>
 
 [Раскопки](/books/machine-learning-on-kubernetes/)
+
+<br/>
+
+### ~[Book][Trevor Grant, Holden Karau, Boris Lublinsky, Richard Liu, Ilan Filonenko] Kubeflow for Machine Learning From Lab to Production [ENG, 2020]~
+
+<br/>
+
+Данные для выполнения заданий переехали куда-то и без них нечего изучать / запускать. Пусть пока поприсутствует, а то опять приступлю к ее чтению и опять окажется "Книга с неожиданным концом".
+
+<br/>
+
+![Machine Learning on Kubernetes](/img/Kubeflow-for-Machine-Learning.jpeg 'Machine Learning on Kubernetes'){: .center-image }
+
+<br/>
+
+[Предлагается совместно почитать, позапускать примеры, обсудить, при необходимости](/books/kubeflow-for-machine-learning-from-lab-to-production/)
 
 <br/>
 
