@@ -11,7 +11,7 @@ permalink: /tools/python/virtualenv/
 <br/>
 
 Делаю:  
-05.07.2023
+07.07.2023
 
 <br/>
 

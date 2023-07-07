@@ -2,7 +2,7 @@
 layout: page
 title: Установка MLFlow
 description: Установка MLFlow
-keywords: mlflow, postgres, setup
+keywords: linux, mlflow, postgres, setup
 permalink: /tools/mlflow/
 ---
 

@@ -38,7 +38,7 @@ https://www.youtube.com/watch?v=E26IaD7bNXg
 
 <br/>
 
-### [Book] Machine Learning Engineering with MLflow [ENG, 2021]
+### [[Book] Machine Learning Engineering with MLflow [ENG, 2021]](/books/machine-learning-engineering-with-mlflow/)
 
 <br/>
 
@@ -47,10 +47,6 @@ https://www.youtube.com/watch?v=E26IaD7bNXg
 <br/>
 
 Прочитал, ничего не помню. Нужно перечитывать.
-
-<br/>
-
-https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
 
 <br/>
 

@@ -12,6 +12,10 @@ permalink: /books/machine-learning-engineering-with-mlflow/
 
 <br/>
 
+https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
+
+<br/>
+
 Возможно, нужно использовать версию:
 
 ```
@@ -33,10 +37,6 @@ $ ./Miniconda3-py38_4.12.0-Linux-x86_64.sh
 ```
 $ conda deactivate
 ``` -->
-
-<br/>
-
-https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflow
 
 <br/>
 
