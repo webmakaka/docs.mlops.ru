@@ -34,6 +34,10 @@ https://www.youtube.com/watch?v=E26IaD7bNXg
 
 [**kubeflow**](/courses/kubeflow/)
 
+[**dvc**](/courses/dvc/)
+
+**feature store**
+
 (Надо найти время, чтобы посмотреть)
 
 <br/>
