@@ -11,7 +11,7 @@ permalink: /tools/python/virtualenv/
 <br/>
 
 Делаю:  
-07.07.2023
+14.08.2023
 
 <br/>
 
@@ -151,6 +151,8 @@ Python 3.8.12
 
 <br/>
 
+### Создание проекта под окружение
+
 ```
 $ export PROJECT_NAME=<MY_NEW_PROJECT_NAME>
 
@@ -165,9 +167,13 @@ $ cd ~/projects/dev/python/${PROJECT_NAME}
 <br/>
 
 ```
-$ pip install pip --upgrade
-$ pip install setuptools --upgrade
+$ {
+  pip install pip --upgrade
+  pip install setuptools --upgrade
+}
+```
 
+```
 // Посмотреть список установленных пакетов
 // $ pip list -v
 ```
