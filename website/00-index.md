@@ -12,6 +12,10 @@ permalink: /
 Наиболее интересны направления: <br/>
 Self-Driving car / Robotics <br/>
 
+![Marley](/img/a3333333mail.gif 'Marley')
+
+[Резюме](//programmist.net)
+
 <br/>
 
 ### [YouTube] Airflow Tutorial for Beginners - Full Course in 2 Hours [ENG, 2022]

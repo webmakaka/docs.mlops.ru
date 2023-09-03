@@ -40,24 +40,17 @@ $ sudo apt install python-is-python3
 <br/>
 
 ```
-// На astra linux требовались
-# apt-get install -y patch make gcc zlib-devel libssl-devel
-
-
-// WARNINGS при отсутствии
-# apt-get install -y bzip2-devel ncurses-devel readline-devel liblzma-devel libsqlite3-devel
-
-
-// Ошибка без этого пакета
-// ModuleNotFoundError: No module named '_ctypes'
- # apt-get install -y libffi-devel
+// На ubuntu
+$ sudo apt install -y build-essential zlib1g-dev libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev liblzma-dev
 ```
 
 <br/>
 
 ```
-// На ubuntu
-$ sudo apt install -y build-essential zlib1g-dev libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev liblzma-dev
+// В книге Building Data Science Applications with FastAPI рекомендуют
+$ sudo apt update; sudo apt install make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
+libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 ```
 
 <!-- <br/>
@@ -140,6 +133,9 @@ $ pyenv install --list | grep python
 $ export PYTHON_VERSION=3.8.12
 
 $ pyenv install ${PYTHON_VERSION}
+
+// установить по умолчанию
+$ pyenv global ${PYTHON_VERSION}
 ```
 
 <br/>
