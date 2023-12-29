@@ -16,6 +16,13 @@ Self-Driving car / Robotics <br/>
 
 [Резюме](//programmist.net)
 
+
+<br/>
+
+### [YouTube] [Girafe AI] MLOPS [RUS, 2023]
+
+https://www.youtube.com/watch?v=5vRqfcvaLM4&list=PLJR10EXrBaAuJzCa9HKmLRdUpgajnh1g7
+
 <br/>
 
 ### [YouTube] Airflow Tutorial for Beginners - Full Course in 2 Hours [ENG, 2022]
