@@ -23,6 +23,10 @@ Self-Driving car / Robotics <br/>
 
 https://www.youtube.com/watch?v=5vRqfcvaLM4&list=PLJR10EXrBaAuJzCa9HKmLRdUpgajnh1g7
 
+
+**Слайды и материалы:**  
+https://github.com/girafe-ai/mlops
+
 <br/>
 
 ### [YouTube] Airflow Tutorial for Beginners - Full Course in 2 Hours [ENG, 2022]
