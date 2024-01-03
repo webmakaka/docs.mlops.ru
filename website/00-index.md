@@ -23,13 +23,16 @@ Self-Driving car / Robotics <br/>
 
 https://www.youtube.com/watch?v=5vRqfcvaLM4&list=PLJR10EXrBaAuJzCa9HKmLRdUpgajnh1g7
 
-Смотрю лекцию 4.
+Смотрю лекцию 5.
 
 
 **Слайды и материалы:**  
 https://github.com/girafe-ai/mlops
 
 https://github.com/v-goncharenko/data-science-template
+
+**Видео пришлось качать с помощью:**
+https://savevideo.click/
 
 <br/>
 
