@@ -37,6 +37,14 @@ https://savevideo.click/
 <br/>
 
 ```
+poetry:
+https://python-poetry.org/docs/
+```
+
+
+<br/>
+
+```
 Hydra это фреймворк для управления файлами конфигурации, заточенный под ML-проекты.
 
 Исходники: https://github.com/facebookresearch/hydra
