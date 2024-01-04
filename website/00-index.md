@@ -23,7 +23,7 @@ Self-Driving car / Robotics <br/>
 
 https://www.youtube.com/watch?v=5vRqfcvaLM4&list=PLJR10EXrBaAuJzCa9HKmLRdUpgajnh1g7
 
-Смотрю лекцию 5.
+Смотрю лекцию 7.
 
 
 **Слайды и материалы:**  
@@ -31,8 +31,18 @@ https://github.com/girafe-ai/mlops
 
 https://github.com/v-goncharenko/data-science-template
 
-**Видео пришлось качать с помощью:**
+**Видео пришлось качать с помощью:**  
 https://savevideo.click/
+
+<br/>
+
+```
+Hydra это фреймворк для управления файлами конфигурации, заточенный под ML-проекты.
+
+Исходники: https://github.com/facebookresearch/hydra
+Документация: https://hydra.cc/docs/intro/
+```
+
 
 <br/>
 
