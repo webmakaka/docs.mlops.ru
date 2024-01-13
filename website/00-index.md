@@ -40,9 +40,6 @@ ISBN: 9781098136581
 
 https://www.youtube.com/watch?v=5vRqfcvaLM4&list=PLJR10EXrBaAuJzCa9HKmLRdUpgajnh1g7
 
-Смотрю лекцию 7.
-
-
 **Слайды и материалы:**  
 https://github.com/girafe-ai/mlops
 
