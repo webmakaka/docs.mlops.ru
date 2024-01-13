@@ -17,6 +17,23 @@ Self-Driving car / Robotics <br/>
 [Резюме](//programmist.net)
 
 
+
+<br/>
+
+### [Books] Нужно полистать
+
+[Andrew P. McMahon] Machine Learning Engineering with Python 
+
+ISBN: 9781837631964
+
+
+[Yaron Haviv, Noah Gift] Implementing MLOps in the Enterprise
+
+ISBN: 9781098136581
+
+
+
+
 <br/>
 
 ### [YouTube] [Girafe AI] MLOPS [RUS, 2023]
