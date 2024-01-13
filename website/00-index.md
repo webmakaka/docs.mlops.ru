@@ -22,10 +22,14 @@ Self-Driving car / Robotics <br/>
 
 ### [Books] Нужно полистать
 
+
+[Raman Jhajj] Mastering MLOps Architecture: From Code to Deployment: Manage the production cycle of continual learning ML models with MLOps
+
+ISBN: 978-9355519498
+
 [Andrew P. McMahon] Machine Learning Engineering with Python 
 
 ISBN: 9781837631964
-
 
 [Yaron Haviv, Noah Gift] Implementing MLOps in the Enterprise
 
