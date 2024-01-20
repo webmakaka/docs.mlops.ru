@@ -8,7 +8,7 @@ permalink: /tools/python/
 
 # Инструменты для разработки на Python
 
-### [Virtualenv](/tools/python/virtualenv/)
+### [Virtualenv](/tools/python/virtualenv/ubuntu/)
 
 ### [Anaconda](/tools/python/anaconda/)
 

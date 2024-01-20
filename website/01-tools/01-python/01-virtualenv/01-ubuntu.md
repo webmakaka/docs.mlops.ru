@@ -1,17 +1,17 @@
 ---
 layout: page
-title: Подготовка виртуального окружения для запуска python приложений в изолированной среде в Ubuntu 20.04 LTS
-description: Подготовка виртуального окружения для запуска python приложений в изолированной среде в Ubuntu 20.04 LTS
+title: Подготовка виртуального окружения для запуска python приложений в изолированной среде в Ubuntu 22.04 LTS
+description: Подготовка виртуального окружения для запуска python приложений в изолированной среде в Ubuntu 22.04 LTS
 keywords: dev, tools, python, virtualenv, ubuntu
-permalink: /tools/python/virtualenv/
+permalink: /tools/python/virtualenv/ubuntu/
 ---
 
-# Подготовка виртуального окружения для запуска python приложений в изолированной среде в Ubuntu 20.04 LTS
+# Подготовка виртуального окружения для запуска python приложений в изолированной среде в Ubuntu 22.04 LTS
 
 <br/>
 
 Делаю:  
-14.08.2023
+2023.01.20
 
 <br/>
 
@@ -19,14 +19,14 @@ permalink: /tools/python/virtualenv/
 $ lsb_release -a
 No LSB modules are available.
 Distributor ID:	Ubuntu
-Description:	Ubuntu 20.04.5 LTS
-Release:	20.04
-Codename:	focal
+Description:	Ubuntu 22.04.3 LTS
+Release:	22.04
+Codename:	jammy
 ```
 
 <br/>
 
-### pyenv (Используется, когда нужна специфическая минорная версия python)
+### Устанавливаю pyenv (Используется, когда нужна специфическая минорная версия python)
 
 <br/>
 
@@ -41,7 +41,7 @@ $ sudo apt install python-is-python3
 
 ```
 // На ubuntu
-$ sudo apt install -y build-essential zlib1g-dev libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev liblzma-dev
+$ sudo apt install -y build-essential zlib1g-dev libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev liblzma-dev tk-dev
 ```
 
 <br/>
@@ -53,20 +53,6 @@ libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
 libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 ```
 
-<!-- <br/>
-
-Вариант 1.
-
-<br/>
-
-Инсталляция brew / homebrew [в ubuntu](//sysadm.ru/desktop/linux/ubuntu/brew/)
-
-<br/>
-
-```
-$ brew install pyenv
-``` -->
-
 <br/>
 
 ```
@@ -76,30 +62,7 @@ $ curl https://pyenv.run | bash
 <br/>
 
 ```
-WARNING: seems you still have not added 'pyenv' to the load path.
-
-# Load pyenv automatically by appending
-# the following to
-~/.bash_profile if it exists, otherwise ~/.profile (for login shells)
-and ~/.bashrc (for interactive shells) :
-
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-# Restart your shell for the changes to take effect.
-
-# Load pyenv-virtualenv automatically by adding
-# the following to ~/.bashrc:
-
-eval "$(pyenv virtualenv-init -)"
-```
-
-<br/>
-
-```
-
-$ vi ~/.bash_profile
+$ vi ~/.bashrc
 ```
 
 ```
@@ -118,11 +81,10 @@ logout / login
 $ echo ${PYENV_ROOT}
 ```
 
-<br/>
+Выдает:
 
 ```
-// если нет
-$ source ~/.bash_profile
+/home/marley/.pyenv
 ```
 
 <br/>
@@ -141,6 +103,7 @@ $ pyenv global ${PYTHON_VERSION}
 <br/>
 
 ```
+// Проверка
 $ ~/.pyenv/versions/${PYTHON_VERSION}/bin/python --version
 Python 3.8.12
 ```

@@ -3,7 +3,7 @@ layout: page
 title: Projects
 description: Projects
 keywords: dev, tools, python, virtualenv, projects
-permalink: /tools/python/virtualenv/projects/
+permalink: /tools/python/virtualenv/ubuntu/projects/
 ---
 
 # Projects
