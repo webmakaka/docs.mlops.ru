@@ -7,9 +7,9 @@ permalink: /open-search.xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
- <ShortName>aiops.ru</ShortName>
- <Description>Use Google to search aiops.ru</Description>
- <Tags>aiops.ru</Tags>
+ <ShortName>mlops.ru</ShortName>
+ <Description>Use Google to search mlops.ru</Description>
+ <Tags>mlops.ru</Tags>
  <Url type="text/html"
-      template="http://www.google.com/search?as_sitesearch=aiops.ru&amp;q={searchTerms}"/>
+      template="http://www.google.com/search?as_sitesearch=mlops.ru&amp;q={searchTerms}"/>
 </OpenSearchDescription>

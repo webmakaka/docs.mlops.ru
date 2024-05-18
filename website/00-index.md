@@ -1,10 +1,10 @@
 ---
 layout: page
-title: AIOPS
+title: MLOPS
 permalink: /
 ---
 
-# AIOPS
+# MLOPS
 
 <br/>
 
@@ -16,27 +16,21 @@ Self-Driving car / Robotics <br/>
 
 [Резюме](//programmist.net)
 
-
-
 <br/>
 
 ### [Books] Нужно полистать
-
 
 [Raman Jhajj] Mastering MLOps Architecture: From Code to Deployment: Manage the production cycle of continual learning ML models with MLOps
 
 ISBN: 978-9355519498
 
-[Andrew P. McMahon] Machine Learning Engineering with Python 
+[Andrew P. McMahon] Machine Learning Engineering with Python
 
 ISBN: 9781837631964
 
 [Yaron Haviv, Noah Gift] Implementing MLOps in the Enterprise
 
 ISBN: 9781098136581
-
-
-
 
 <br/>
 
@@ -59,7 +53,6 @@ poetry:
 https://python-poetry.org/docs/
 ```
 
-
 <br/>
 
 ```
@@ -75,7 +68,6 @@ Hydra это фреймворк для управления файлами ко�
 ClearML
 https://clear.ml/pricing
 ```
-
 
 <br/>
 

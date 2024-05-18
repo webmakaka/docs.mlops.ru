@@ -1,12 +1,12 @@
 # Site settings
-title: aiops.ru на русском языке
+title: mlops.ru на русском языке
 
-description: Собираем материалы связанные с разработкой и развертыванием приложений вокруг экосистемы AI
+description: Начинаем собирать материалы по автоматизации развертывания machine learning проектов
 
-keywords: AIOPS, MLOPS, Clouds, Linux, Docker, Kubernetes
+keywords: machine learning, mlops, aiops, devops, gitops, cloud, linux, docker, kubernetes
 
 baseurl: '' # the subpath of your site, e.g. /blog/
-url: 'https://aiops.ru' # the base hostname & protocol for your site
+url: 'https://mlops.ru' # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
