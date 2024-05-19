@@ -70,3 +70,7 @@ operators   install-mctbs   opendatahub-operator.v1.1.1   Automatic   true
 ```
 $ kubectl get packagemanifests
 ``` -->
+
+<br/>
+
+**tags: Linux, Docker, Minikube, Jupyter, AirFlow, MlFlow, MinIO, Spark, Seldon, Postgres, KeyCloak, Prometheus, Grafana**
