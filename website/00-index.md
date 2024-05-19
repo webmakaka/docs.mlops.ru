@@ -1,10 +1,10 @@
 ---
 layout: page
-title: MLOPS
+title: MLOPS на русском
 permalink: /
 ---
 
-# MLOPS
+# MLOPS на русском
 
 <br/>
 
