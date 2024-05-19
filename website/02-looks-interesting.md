@@ -8,6 +8,10 @@ permalink: /looks-interesting/
 
 # Выглядит интересно
 
+### [Stepic] MLOps. Начало
+
+https://stepik.org/course/181476/promo
+
 <br/>
 
 ### [Books] Нужно полистать
@@ -60,6 +64,12 @@ Hydra это фреймворк для управления файлами ко�
 ClearML
 https://clear.ml/pricing
 ```
+
+<br/>
+
+### Курс | MLOps
+
+https://www.youtube.com/playlist?list=PLfnFOImnyWRWHGQpLKTSNCZ-FW9DZiNgx
 
 <br/>
 
