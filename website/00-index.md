@@ -4,7 +4,7 @@ title: MLOPS на русском
 permalink: /
 ---
 
-# MLOPS на русском
+# MLOPS
 
 <br/>
 
