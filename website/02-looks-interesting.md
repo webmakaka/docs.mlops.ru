@@ -14,6 +14,12 @@ https://stepik.org/course/181476/promo
 
 <br/>
 
+**На youtube:**
+
+https://www.youtube.com/watch?v=skTh3tGksIQ&list=PLmA-1xX7IuzAixCe10sFhyTcyunSc5Zdi
+
+<br/>
+
 ### [Books] Нужно полистать
 
 [Raman Jhajj] Mastering MLOps Architecture: From Code to Deployment: Manage the production cycle of continual learning ML models with MLOps
