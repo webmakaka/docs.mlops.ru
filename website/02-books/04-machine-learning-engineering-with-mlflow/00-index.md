@@ -58,7 +58,7 @@ $ git clone https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflo
 ## Section 1: Problem Framing and Introductions
 
 - [Chapter 1. Introducing MLflow](/books/machine-learning-engineering-with-mlflow/introducing-mlflow/)
-  • Chapter 2, Your Machine Learning Project
+- Chapter 2, Your Machine Learning Project
 
 <br/>
 
@@ -74,7 +74,7 @@ $ git clone https://github.com/webmakaka/Machine-Learning-Engineering-with-MLflo
 
 ## Section 3: Machine Learning in Production
 
-• Chapter 6. Introducing ML Systems Architecture
+- Chapter 6. Introducing ML Systems Architecture
 
 - [Chapter 7. Data and Feature Management](/books/machine-learning-engineering-with-mlflow/data-and-feature-management/)
 - [Chapter 8. Training Models with MLflow](/books/machine-learning-engineering-with-mlflow/training-models-with-mlflow/)
