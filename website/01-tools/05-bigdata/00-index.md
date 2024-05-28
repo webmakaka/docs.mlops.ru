@@ -10,4 +10,4 @@ permalink: /bigdata/
 
 <br/>
 
-### [Hadoop](/bigdata/hadoop/)
+### [Hadoop](/tools/bigdata/hadoop/)

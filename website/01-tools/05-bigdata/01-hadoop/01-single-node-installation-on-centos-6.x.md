@@ -3,7 +3,7 @@ layout: page
 title: Hadoop Single Node Installation on Centos 6.X
 description: Hadoop Single Node Installation on Centos 6.X
 keywords: Hadoop Single Node Installation on Centos 6.X
-permalink: /bigdata/hadoop/single-node-installation-on-centos-6/
+permalink: /tools/bigdata/hadoop/single-node-installation-on-centos-6/
 ---
 
 # Hadoop Single Node Installation on Centos 6.X

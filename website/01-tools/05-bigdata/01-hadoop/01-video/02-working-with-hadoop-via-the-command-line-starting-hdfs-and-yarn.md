@@ -3,7 +3,7 @@ layout: page
 title: Working with Hadoop via the Command Line Starting HDFS and Yarn
 description: Working with Hadoop via the Command Line Starting HDFS and Yarn
 keywords: Working with Hadoop via the Command Line Starting HDFS and Yarn
-permalink: /bigdata/hadoop/starting-hdfs-and-yarn/
+permalink: /tools/bigdata/hadoop/starting-hdfs-and-yarn/
 ---
 
 # Working with Hadoop via the Command Line Starting HDFS and Yarn
