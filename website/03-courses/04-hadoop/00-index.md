@@ -3,7 +3,7 @@ layout: page
 title: Hadoop
 description: Hadoop
 keywords: Hadoop
-permalink: /tools/bigdata/hadoop/video-course/
+permalink: /courses/bigdata/hadoop/video-course/
 ---
 
 # [O'Reilly Media] Hadoop Fundamentals for Data Scientists Training Video [2015, ENG]

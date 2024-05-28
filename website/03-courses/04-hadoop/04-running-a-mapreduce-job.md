@@ -3,7 +3,7 @@ layout: page
 title: Working with Hadoop via the Command Line Running a MapReduce Job
 description: Working with Hadoop via the Command Line Running a MapReduce Job
 keywords: Working with Hadoop via the Command Line Running a MapReduce Job
-permalink: /tools/bigdata/hadoop/running-a-mapreduce-job/
+permalink: /courses/bigdata/hadoop/running-a-mapreduce-job/
 ---
 
 # Working with Hadoop via the Command Line Running a MapReduce Job

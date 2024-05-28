@@ -3,7 +3,7 @@ layout: page
 title: Loading Data into HDFS
 description: Loading Data into HDFS
 keywords: Loading Data into HDFS
-permalink: /tools/bigdata/hadoop/loading-data-into-hdfs/
+permalink: /courses/bigdata/hadoop/loading-data-into-hdfs/
 ---
 
 # Loading Data into HDFS
