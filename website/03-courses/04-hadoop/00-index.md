@@ -29,13 +29,13 @@ https://github.com/bbengfort/hadoop-fundamentals
 
 <br/><br/>
 
-[Создание виртуальной машины virtual box для курса по hadoop](/tools/bigdata/hadoop/crate-virtual-machine-virtual-box-for-hadoop-course/)
+[Создание виртуальной машины virtual box для курса по hadoop](/courses/bigdata/hadoop/crate-virtual-machine-virtual-box-for-hadoop-course/)
 
-[Working with Hadoop via the Command Line: Starting HDFS and Yarn](/tools/bigdata/hadoop/starting-hdfs-and-yarn/)
+[Working with Hadoop via the Command Line: Starting HDFS and Yarn](/courses/bigdata/hadoop/starting-hdfs-and-yarn/)
 
-[Working with Hadoop via the Command Line: Loading Data into HDFS](/tools/bigdata/hadoop/loading-data-into-hdfs/)
+[Working with Hadoop via the Command Line: Loading Data into HDFS](/courses/bigdata/hadoop/loading-data-into-hdfs/)
 
-[Working with Hadoop via the Command Line: Running a MapReduce Job](/tools/bigdata/hadoop/running-a-mapreduce-job/)
+[Working with Hadoop via the Command Line: Running a MapReduce Job](/courses/bigdata/hadoop/running-a-mapreduce-job/)
 
 Дальше поплыл.
 Пока нужно разобраться как настраивать самостоятельно в single и cluster конфигурациях.
