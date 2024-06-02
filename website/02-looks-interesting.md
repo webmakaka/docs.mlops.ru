@@ -8,6 +8,16 @@ permalink: /looks-interesting/
 
 # Выглядит интересно
 
+<br/>
+
+### [informit][Milecia McGregor] Learn MLOps for Machine Learning [ENG, 2023]
+
+<br/>
+
+![Learn MLOps for Machine Learning](/img/learn-mlops-machine-learning-video.jpg 'Learn MLOps for Machine Learning'){: .center-image }
+
+<br/>
+
 ### [Stepic] MLOps. Начало
 
 https://stepik.org/course/181476/promo
