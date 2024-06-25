@@ -10,11 +10,20 @@ permalink: /looks-interesting/
 
 <br/>
 
-### [informit][Milecia McGregor] Learn MLOps for Machine Learning [ENG, 2023]
+### [Informit][Milecia McGregor] Learn MLOps for Machine Learning [ENG, 2023]
 
 <br/>
 
 ![Learn MLOps for Machine Learning](/img/learn-mlops-machine-learning-video.jpg 'Learn MLOps for Machine Learning'){: .center-image }
+
+<br/>
+
+**С трудом нашел гит:**  
+https://github.com/flippedcoder/mlops-demo
+
+<br/>
+
+Чего-то прям совсем какая-то скукатища неинтересная.
 
 <br/>
 
