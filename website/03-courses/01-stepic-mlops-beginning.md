@@ -86,6 +86,19 @@ $ airflow dags test mlops_dag_1
 
 <br/>
 
+```
+$ pip install numpy==1.26.4 pandas==2.1.4 scikit-learn==1.5.0 sqlalchemy==0.28.2 psycopg2-binary==2.9.9
+```
+
+<br/>
+
+```
+$ cd /home/marley/projects/dev/mlops
+$ vi load-data.py
+```
+
+<br/>
+
 ```python
 import numpy as np
 import pandas as pd
@@ -104,13 +117,28 @@ dataset = np.concatenate([data['data'], data['target'].reshape([data['target'].s
 dataset = pd.DataFrame(dataset, columns = data['feature_names']+data['target_names'])
 
 # Создадим подключение к базе данных postgres. Поменяйте на свой пароль yourpass
-engine = create_engine('postgresql://postgres:yourpass@localhost:5432/postgres')
+# engine = create_engine('postgresql://postgres:yourpass@localhost:5432/postgres')
+
+engine = create_engine('postgresql://admin1:pA55w0rd123@postgres:5432/postgresdb')
 
 # Сохраним датасет в базу данных
 dataset.to_sql('california_housing', engine)
 
 # Для проверки можно сделать:
 pd.read_sql_query("SELECT * FROM california_housing", engine)
+```
+
+<br/>
+
+```
+$ python load-data.py
+```
+
+<br/>
+
+```
+// OK!
+$ PGPASSWORD=pA55w0rd123 psql --host=localhost --username=admin1 --port=5432 --dbname=postgresdb -c 'SELECT * FROM california_housing'
 ```
 
 <br/>
