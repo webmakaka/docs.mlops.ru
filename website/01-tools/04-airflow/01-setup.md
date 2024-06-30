@@ -11,7 +11,7 @@ permalink: /tools/airflow/
 <br/>
 
 Делаю:  
-07.07.2023
+2023.07.07
 
 <br/>
 

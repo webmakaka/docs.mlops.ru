@@ -10,51 +10,6 @@ permalink: /looks-interesting/
 
 <br/>
 
-### [Informit][Milecia McGregor] Learn MLOps for Machine Learning [ENG, 2023]
-
-<br/>
-
-![Learn MLOps for Machine Learning](/img/learn-mlops-machine-learning-video.jpg 'Learn MLOps for Machine Learning'){: .center-image }
-
-<br/>
-
-**С трудом нашел гит:**  
-https://github.com/flippedcoder/mlops-demo
-
-<br/>
-
-Чего-то прям совсем какая-то скукатища неинтересная.
-
-<br/>
-
-### [Stepic] MLOps. Начало
-
-https://stepik.org/course/181476/promo
-
-<br/>
-
-**На youtube:**
-
-https://www.youtube.com/watch?v=skTh3tGksIQ&list=PLmA-1xX7IuzAixCe10sFhyTcyunSc5Zdi
-
-<br/>
-
-### [Books] Нужно полистать
-
-[Raman Jhajj] Mastering MLOps Architecture: From Code to Deployment: Manage the production cycle of continual learning ML models with MLOps
-
-ISBN: 978-9355519498
-
-[Andrew P. McMahon] Machine Learning Engineering with Python
-
-ISBN: 9781837631964
-
-[Yaron Haviv, Noah Gift] Implementing MLOps in the Enterprise
-
-ISBN: 9781098136581
-
-<br/>
-
 ### [YouTube] [Girafe AI] MLOPS [RUS, 2023]
 
 https://www.youtube.com/watch?v=5vRqfcvaLM4&list=PLJR10EXrBaAuJzCa9HKmLRdUpgajnh1g7
@@ -92,7 +47,7 @@ https://clear.ml/pricing
 
 <br/>
 
-### Курс | MLOps
+### [OTUS] Курс | MLOps
 
 https://www.youtube.com/playlist?list=PLfnFOImnyWRWHGQpLKTSNCZ-FW9DZiNgx
 
@@ -123,3 +78,36 @@ https://www.youtube.com/watch?v=E26IaD7bNXg
 **feature store**
 
 (Надо найти время, чтобы посмотреть)
+
+<br/>
+
+### [Informit][Milecia McGregor] Learn MLOps for Machine Learning [ENG, 2023]
+
+<br/>
+
+![Learn MLOps for Machine Learning](/img/learn-mlops-machine-learning-video.jpg 'Learn MLOps for Machine Learning'){: .center-image }
+
+<br/>
+
+**С трудом нашел гит:**  
+https://github.com/flippedcoder/mlops-demo
+
+<br/>
+
+Чего-то прям совсем какая-то скукатища неинтересная.
+
+<br/>
+
+### [Books] Нужно полистать
+
+[Raman Jhajj] Mastering MLOps Architecture: From Code to Deployment: Manage the production cycle of continual learning ML models with MLOps
+
+ISBN: 978-9355519498
+
+[Andrew P. McMahon] Machine Learning Engineering with Python
+
+ISBN: 9781837631964
+
+[Yaron Haviv, Noah Gift] Implementing MLOps in the Enterprise
+
+ISBN: 9781098136581
