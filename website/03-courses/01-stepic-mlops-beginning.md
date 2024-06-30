@@ -1,16 +1,12 @@
 ---
 layout: page
-title: Курсы MLOPS
-description: Курсы MLOPS
-keywords: courses
+title: Stepic MLOps. Начало
+description: Stepic MLOps. Начало
+keywords: courses, stepic, mlops
 permalink: /courses/stepik-mlops-beginning/
 ---
 
-# Курсы MLOPS
-
-<br/>
-
-### [Stepic] MLOps. Начало
+# [Stepic] MLOps. Начало
 
 https://stepik.org/course/181476/promo
 
@@ -30,7 +26,17 @@ https://www.youtube.com/watch?v=skTh3tGksIQ&list=PLmA-1xX7IuzAixCe10sFhyTcyunSc5
 
 <br/>
 
-### 4. AirFlow
+## 4. AirFlow
+
+<br/>
+
+### 01. DAG Hello World
+
+<br/>
+
+```
+$ vi dags/mlops_dag_1.py
+```
 
 <br/>
 
@@ -70,7 +76,13 @@ task_init
 
 <br/>
 
-### Часть 3. Создать новый юпитер-ноутбук и в нём выполнить код ниже.
+```
+$ airflow dags test mlops_dag_1
+```
+
+<br/>
+
+### 02. Загрузка данных в таблицу postgres
 
 <br/>
 
@@ -100,6 +112,10 @@ dataset.to_sql('california_housing', engine)
 # Для проверки можно сделать:
 pd.read_sql_query("SELECT * FROM california_housing", engine)
 ```
+
+<br/>
+
+### 03. Train DAG
 
 <br>
 

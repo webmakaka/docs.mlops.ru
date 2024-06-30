@@ -3,14 +3,14 @@ layout: page
 title: Курсы MLOPS
 description: Курсы MLOPS
 keywords: courses
-permalink: /courses/stepic-mlops-beginning/
+permalink: /courses/
 ---
 
 # Курсы MLOPS
 
 <br/>
 
-### [[Stepic] MLOps. Начало]()
+### [[Stepic] MLOps. Начало](/courses/stepik-mlops-beginning/)
 
 https://stepik.org/course/181476/promo
 
@@ -19,6 +19,12 @@ https://stepik.org/course/181476/promo
 **На youtube:**
 
 https://www.youtube.com/watch?v=skTh3tGksIQ&list=PLmA-1xX7IuzAixCe10sFhyTcyunSc5Zdi
+
+<br/>
+
+```
+$ vi dags/mlops_dag_1.py
+```
 
 <br/>
 
@@ -48,10 +54,20 @@ dag = DAG(
 )
 
 def init() -> NoReturn:
-    print("Hello, World")
+    print("Hello, World!")
 
 
 task_init = PythonOperator(task_id = "init", python_callable = init, dag =  dag)
 
 task_init
 ```
+
+<br/>
+
+```
+$ airflow dags test mlops_dag_1
+```
+
+<br/>
+
+### Загрузка данных в таблицу postgres
