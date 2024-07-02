@@ -2,7 +2,7 @@
 layout: page
 title: Курсы по MLOPS
 description: Курсы по MLOPS
-keywords: courses
+keywords: mlops, courses
 permalink: /courses/
 ---
 
@@ -10,12 +10,4 @@ permalink: /courses/
 
 <br/>
 
-### [[Stepic] MLOps. Начало](/courses/stepik-mlops-beginning/)
-
-https://stepik.org/course/181476/promo
-
-<br/>
-
-**На youtube:**
-
-https://www.youtube.com/watch?v=skTh3tGksIQ&list=PLmA-1xX7IuzAixCe10sFhyTcyunSc5Zdi
+### [[Stepic] MLOps. Начало [RUS, 2023]](/courses/stepik-mlops-beginning/)

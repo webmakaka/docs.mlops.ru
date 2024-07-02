@@ -6,15 +6,25 @@ keywords: courses, stepic, mlops
 permalink: /courses/stepik-mlops-beginning/
 ---
 
-# [Stepic] MLOps. Начало
+# [Stepic] MLOps. Начало [RUS, 2023]
 
+<br/>
+
+**Материалы на stepic**  
 https://stepik.org/course/181476/promo
 
 <br/>
 
-**На youtube:**
-
+**На youtube:**  
 https://www.youtube.com/watch?v=skTh3tGksIQ&list=PLmA-1xX7IuzAixCe10sFhyTcyunSc5Zdi
+
+<br/>
+
+Медленно продолжаем изучать материал. Если есть предложения по улучшению, принимаются!
+
+<br/>
+
+## Используемые программы:
 
 <br/>
 
