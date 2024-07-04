@@ -64,7 +64,7 @@ Python 3.10.12
 <br/>
 
 ```
-$ vi dags/mlops_dag_1.py
+$ vi ${AIRFLOW_HOME}/dags/mlops_dag_1.py
 ```
 
 <br/>
@@ -118,7 +118,7 @@ $ airflow dags test mlops_dag_1
 ```
 // pandas 2.1.0
 // sqlalchemy==1.4.36
-$ pip install numpy==1.26.4 pandas==2.1.4 scikit-learn==1.5.0 sqlalchemy==0.28.2 psycopg2-binary==2.9.9
+$ pip install numpy==1.26.4 pandas==2.1.4 scikit-learn==1.5.0 sqlalchemy==1.4.36 psycopg2-binary==2.9.9
 ```
 
 <br/>
@@ -136,7 +136,6 @@ import pandas as pd
 
 from sklearn.datasets import fetch_california_housing
 from sqlalchemy import create_engine
-
 
 # Получим датасет California housing
 data = fetch_california_housing()
@@ -169,7 +168,7 @@ $ python load-data.py
 
 ```
 // OK!
-$ PGPASSWORD=pA55w0rd123 psql --host=localhost --username=admin1 --port=5432 --dbname=postgresdb -c 'SELECT * FROM california_housing'
+$ PGPASSWORD=pA55w0rd123 psql --host=postgreshost --username=admin1 --port=5432 --dbname=postgresdb -c 'SELECT * FROM california_housing'
 ```
 
 <br/>
@@ -179,29 +178,115 @@ $ PGPASSWORD=pA55w0rd123 psql --host=localhost --username=admin1 --port=5432 --d
 <br>
 
 ```
+$ pip install apache-airflow-providers-postgres
+$ pip install apache-airflow-providers-amazon
+```
+
+```
+// minioadmin / minioadmin
+https://play.min.io:9443/login
+
+
+-> Create Access Keys
+
+
+Access Key: lHT9EscF8VtvAU2KmEsW
+Secret Key: NYBHX97Y0V1tpUJk574oYxgkUyyM3YmiKrGaocDB
+
+```
+
+https://www.youtube.com/watch?v=sVNvAtIZWdQ
+
+<br>
+
+```
 Airflow -> Admin -> Connections
+
+Connection id: s3_connection
+Connection Type: Amazon Web Services
+
+Extra: {"AWS_ACCESS_KEY_ID":"lHT9EscF8VtvAU2KmEsW", "AWS_SECRET_ACCESS_KEY":"NYBHX97Y0V1tpUJk574oYxgkUyyM3YmiKrGaocDB",  "ENDPOINT_URL":"https://play.min.io:9000"}
+```
+
+<br/>
+
+В комментах написано:
+
+```
+The test connection only works for connecting to AWS S3. Connect to Minio doesn't require a token.
+```
+
+<!--
+<br/>
+
+Протестируем!
+
+<br/>
+
+```
+// https://github.com/coder2j/airflow-docker/blob/main/dags/dag_with_minio_s3.py
+$ vi ${AIRFLOW_HOME}/dags/dag_with_minio_s3.py
+```
+
+<br>
+
+```python
+from datetime import datetime, timedelta
+
+from airflow import DAG
+from airflow.providers.amazon.aws.sensors.s3_key import S3KeySensor
+
+
+default_args = {
+    'owner': 'coder2j',
+    'retries': 5,
+    'retry_delay': timedelta(minutes=10)
+}
+
+
+with DAG(
+    dag_id='dag_with_minio_s3_v02',
+    start_date=datetime(2022, 2, 12),
+    schedule_interval='@daily',
+    default_args=default_args
+) as dag:
+    task1 = S3KeySensor(
+        task_id='sensor_minio_s3',
+        bucket_name='airflow',
+        bucket_key='data.csv',
+        aws_conn_id='s3_connection',
+        mode='poke',
+        poke_interval=5,
+        timeout=30
+    )
+``` -->
+
+<br>
+
+```
+Airflow -> Admin -> Connections
+
++
 
 Connection id: pg_connection
 Connection Type: Postgres
-Host: localhost
-Schema: postgresdb
+Host: postgres
+Database: postgresdb
 Login admin1
 Password: pA55w0rd123
 Port: 5432
 ```
 
-<br>
-
-```
-$ pip install apache-airflow-providers-postgres
-$ pip install apache-airflow-providers-amazon
-```
+<!-- // ????
+$ pip install minio -->
 
 <br/>
 
 ```
-$ vi dags/train_dag.py
+$ vi ${AIRFLOW_HOME}/dags/train_dag.py
 ```
+
+**Требует переработки**
 
 <br>
 
@@ -226,8 +311,8 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
 
 DEFAULT_ARGS = {
-    "owner" : "Ryabukhin Alex",
-    "email" : "santolyich@gmail.com",
+    "owner" : "Marley",
+    "email" : "marley@example.com",
     "email_on_failure" : True,
     "email_on_retry" : False,
     "retry" : 3,
@@ -235,7 +320,7 @@ DEFAULT_ARGS = {
 }
 
 dag = DAG(
-    dag_id = "train",
+    dag_id = "mlops_train",
     schedule_interval = "0 1 * * *",
     start_date = days_ago(2),
     catchup = False,
@@ -246,14 +331,14 @@ dag = DAG(
 _LOG = logging.getLogger()
 _LOG.addHandler(logging.StreamHandler())
 
-BUCKET = "mlops-bucket"
+BUCKET = "mlops-bucket-marley"
 DATA_PATH = "datasets/california_housing.pkl"
 FEATURES = ["MedInc", "HouseAge", "AveRooms", "AveBedrms",
             "Population", "AveOccup", "Latitude", "Longitude"]
 TARGET = "MedHouseVal"
 
 def init() -> None:
-    _LOG.info("Train pipeline started!")
+    _LOG.info("[LOG] Train pipeline started!")
 
 def get_data_from_postgres() -> None:
 
@@ -270,10 +355,10 @@ def get_data_from_postgres() -> None:
     resource = session.resource("s3")
 
     # Сохранить файл в формате pkl на S3
-    pickle_byte_obj = pickle.dumps(date)
+    pickle_byte_obj = pickle.dumps(data)
     resource.Object(BUCKET, DATA_PATH).put(Body=pickle_byte_obj)
 
-    _LOG.info("Data download finished!")
+    _LOG.info("[LOG] Data download finished!")
 
 
 def prepare_data() -> None:
@@ -305,8 +390,7 @@ def prepare_data() -> None:
         resource.Object(BUCKET, f"dataset/{name}.pkl").put(Body=pickle_byte_obj)
 
 
-    _LOG.info("Data download finished!")
-
+    _LOG.info("[LOG] Data download finished!")
 
 
 def train_model() -> None:
@@ -337,16 +421,29 @@ def train_model() -> None:
     json_byte_object = json.dumps(result)
     resource.Object(BUCKET, f"results/{date}.json").put(Body=json_byte_object)
 
-    _LOG.info("Model training finished!")
+    _LOG.info("[LOG] Model training finished!")
 
 
 def save_results() -> None:
-    _LOG.info("Success!")
-
+    _LOG.info("[LOG] Success!")
 
 task_init = PythonOperator(task_id="init", python_callable=init, dag=dag)
 task_get_data = PythonOperator(task_id="get_data", python_callable=get_data_from_postgres, dag=dag)
 task_prepare_data = PythonOperator(task_id="prepare_data", python_callable=prepare_data, dag=dag)
 task_train_model = PythonOperator(task_id="train_model", python_callable=train_model, dag=dag)
 task_save_results = PythonOperator(task_id="save_results", python_callable=save_results, dag=dag)
+
+task_init >> task_get_data >> task_prepare_data >> task_train_model >> task_save_results
+```
+
+<br/>
+
+```
+$ airflow dags list
+```
+
+<br/>
+
+```
+$ airflow scheduler
 ```

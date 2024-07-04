@@ -29,7 +29,7 @@ $ sudo vi /etc/profile.d/airflow.sh
 #### AIRFLOW ########################
 
 export AIRFLOW_HOME=/home/marley/projects/dev/mlops/airflow
-export AIRFLOW_CONFIG=$AIRFLOW_HOME/airflow.cfg
+export AIRFLOW_CONFIG=${AIRFLOW_HOME}/airflow.cfg
 
 #### AIRFLOW ########################
 ```
@@ -76,7 +76,7 @@ $ mkdir -p /home/marley/projects/dev/mlops/airflow/dags
 <br/>
 
 ```
-$ vi dags/mlops_dag_1.py
+$ vi ${AIRFLOW_HOME}/dags/mlops_dag_1.py
 ```
 
 <br/>
@@ -159,6 +159,22 @@ http://localhost:8080/
 $ airflow config get-value scheduler scheduler_health_check_threshold
 $ airflow config get-value scheduler scheduler_heartbeat_sec
 ``` -->
+
+<br/>
+
+### Если нужно включить test_connection
+
+```
+$ vi $AIRFLOW_HOME/airflow.cfg
+```
+
+<br/>
+
+```
+test_connection = Disabled
+меняю на
+test_connection = Enabled
+```
 
 <br/>
 
