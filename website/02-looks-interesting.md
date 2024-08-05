@@ -12,7 +12,7 @@ permalink: /looks-interesting/
 
 ### [YouTube] [Girafe AI] MLOPS [RUS, 2023]
 
-https://www.youtube.com/watch?v=5vRqfcvaLM4&list=PLJR10EXrBaAuJzCa9HKmLRdUpgajnh1g7
+https://www.youtube.com/playlist?list=PLJR10EXrBaAvigbPCO82kIGrVjUkrUc-g
 
 **Слайды и материалы:**  
 https://github.com/girafe-ai/mlops
