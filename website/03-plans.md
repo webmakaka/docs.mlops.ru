@@ -8,5 +8,6 @@ permalink: /plans/
 
 # Планы изучать AIML
 
-
 ### Zero to Mastery Prompt Engineering Bootcamp
+
+### Learn Hugging Face by Building a Custom AI Model
