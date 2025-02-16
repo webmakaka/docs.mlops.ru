@@ -81,7 +81,7 @@ logout / login
 $ echo ${PYENV_ROOT}
 ```
 
-Выдает:
+Возвращает:
 
 ```
 /home/marley/.pyenv
