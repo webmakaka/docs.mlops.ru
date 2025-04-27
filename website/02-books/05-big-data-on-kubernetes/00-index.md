@@ -34,12 +34,12 @@ $ java --version
 openjdk 11.0.26 2025-01-21
 ```
 
-<br/>
+<!-- <br/>
 
 ```
 $ vi /etc/hosts
 127.0.0.1 postgres
-```
+``` -->
 
 <br/>
 
@@ -453,4 +453,243 @@ $ python simulations/make_fake_data.py
 
 ```
 $ docker-compose down
+```
+
+<br/>
+
+### Chapter 8, Deploying the Big Data Stack on Kubernetes
+
+<br/>
+
+Делаю:  
+2025.04.26
+
+Сначала Airflow, т.к. косячный!
+
+<br/>
+
+#### Deploying Airflow on Kubernetes (не заработал)
+
+```
+$ helm repo add apache-airflow https://airflow.apache.org
+```
+
+<br/>
+
+```
+$ cd /home/marley/projects/dev/python/big_data/Bigdata-on-Kubernetes/Chapter08/airflow
+```
+
+<br/>
+
+```
+$ vi custom_values.yaml
+```
+
+<br/>
+
+```
+$ helm install airflow apache-airflow/airflow --namespace airflow --create-namespace -f custom_values.yaml
+```
+
+<br/>
+
+Ошибка!
+
+<br/>
+
+```
+$ kubectl get svc -n airflow
+```
+
+<br/>
+
+#### Deploying Spark on Kubernetes
+
+```
+$ kubectl create namespace spark-operator
+```
+
+<br/>
+
+```
+$ helm install spark-operator https://github.com/kubeflow/spark-operator/releases/download/spark-operator-chart-1.1.27/spark-operator-1.1.27.tgz --namespace spark-operator --set webhook.enable=true
+```
+
+<br/>
+
+```
+$ kubectl get pods -n spark-operator
+NAME                                READY   STATUS      RESTARTS   AGE
+spark-operator-6f5b9cf5f7-mppxm     1/1     Running     0          76s
+spark-operator-webhook-init-mbkwg   0/1     Completed   0          2m1s
+```
+
+<br/>
+
+```
+$ cd /home/marley/projects/dev/python/big_data/Bigdata-on-Kubernetes/Chapter08/spark
+```
+
+<br/>
+
+#### Deploying Kafka on Kubernetes
+
+```
+$ helm repo add strimzi https://strimzi.io/charts/
+```
+
+<br/>
+
+```
+$ helm install kafka strimzi/strimzi-kafka-operator --namespace kafka --create-namespace --version 0.40.0
+```
+
+<br/>
+
+```
+$ helm status kafka -n kafka
+$ kubectl get pods -n kafka
+```
+
+```
+$ cd /home/marley/projects/dev/python/big_data/Bigdata-on-Kubernetes/Chapter08/kafka
+```
+
+```
+$ kubectl apply -f kafka_jbod.yaml -n kafka
+```
+
+```
+$ kubectl get kafka -n kafka
+NAME            DESIRED KAFKA REPLICAS   DESIRED ZK REPLICAS   READY   METADATA STATE   WARNINGS
+kafka-cluster   3                        3
+```
+
+<br/>
+
+```
+$ kubectl get pods -n kafka
+NAME                                        READY   STATUS    RESTARTS   AGE
+kafka-cluster-zookeeper-0                   1/1     Running   0          80s
+kafka-cluster-zookeeper-1                   1/1     Running   0          80s
+kafka-cluster-zookeeper-2                   1/1     Running   0          80s
+strimzi-cluster-operator-86b64d9bd8-5q277   1/1     Running   0          6m36s
+```
+
+<br/>
+
+### Chapter 9, Data Consumption Layer
+
+<!--
+
+• Chapter 10, Building a Big Data Pipeline on Kubernetes
+• Chapter 11, Generative AI on Kubernetes
+• Chapter 12, Where To Go From Here
+
+-->
+
+<br/>
+
+Делаю:  
+2025.04.27
+
+#### Deploying Trino in Kubernetes
+
+<br/>
+
+##### [Установил MetalLB](//gitops.ru/tools/containers/kubernetes/utils/metal-lb/)
+
+<br/>
+
+```
+$ helm repo add trino https://trinodb.github.io/charts
+```
+
+<br/>
+
+```
+$ cd /home/marley/projects/dev/python/big_data/Bigdata-on-Kubernetes/Chapter09/trino
+```
+
+<br/>
+
+```
+$ helm install trino trino/trino -f custom_values.yaml -n trino --create-namespace --version 0.19.0
+```
+
+<br/>
+
+```
+$ kubectl get pods -n trino
+NAME                                READY   STATUS    RESTARTS   AGE
+trino-coordinator-5864b8497-xvb4h   1/1     Running   0          3m36s
+trino-worker-6dcf5978d5-dcwjc       1/1     Running   0          3m36s
+trino-worker-6dcf5978d5-zl87k       1/1     Running   0          3m36s
+```
+
+<br/>
+
+```
+$ kubectl get svc -n trino
+NAME    TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
+trino   LoadBalancer   10.109.226.94   192.168.49.20   8080:31473/TCP   13m
+```
+
+<br/>
+
+```
+// trino
+192.168.49.20:8080
+```
+
+Dbeaver создать новое соединение с типом trino, скачать драйвера и подключиться.
+
+У меня крашится при попытке посмотреть структуру таблиц в minikube и kind.
+
+<br/>
+
+#### Deploying Elasticsearch in Kubernetes
+
+<br/>
+
+```
+$ helm repo add elastic https://helm.elastic.co
+```
+
+<br/>
+
+```
+$ helm install elastic-operator elastic/eck-operator -n elastic --create-namespace --version 2.12.1
+```
+
+<br/>
+
+```
+$ /home/marley/projects/dev/python/big_data/Bigdata-on-Kubernetes/Chapter09/elasticsearch
+```
+
+<br/>
+
+```
+$ kubectl apply -f elastic_cluster.yaml -n elastic
+$ kubectl apply -f kibana.yaml -n elastic
+```
+
+<br/>
+
+```
+$ kubectl get pods -n elastic
+```
+
+<br/>
+
+```
+$ kubectl get secret elastic-es-elastic-user -n elastic -o go-template='{{.data.elastic | base64decode}}'
+```
+
+<br/>
+
+```
+$ kubectl get svc -n elastic
 ```
