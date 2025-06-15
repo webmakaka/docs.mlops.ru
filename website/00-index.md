@@ -12,21 +12,25 @@ permalink: /
 Если копаете тему devops / gitops / secops / sysops / mlops / aiops и д.р., давайте обсуждать и делиться знаниями.  
 Группа в телеграм https://t.me/techline_ru
 
-Можете предложить что-то интересное для изучения!
+<br/>
+
+### Предлагаю рекомендовать интересные книги / курсы для изучения MLOps
+
+Нужно, чтобы предлагающий тоже был бы готов изучать материал, разбирать примеры etc.
 
 <br/>
 
-### LLM (Llama, DeepSeek)
-
-Появилась идея использовать chatgpt для ответов на вопросы связанные с внутренней документацией компании.
-
-[Начинаем копать и собирать материалы](https://llmeng.ru/).
+### [[Course][Udemy][Gourav Shah] DevOps to MLOps Bootcamp: Build & Deploy ML Systems End-to-End [ENG, 2025]](/courses/devops-to-mlops-bootcamp/)
 
 <br/>
 
-### Планы
+### [[Book][BooNeylson Crepaldek] Big Data on Kubernetes [ENG, 2024]](/books/machine-learning-engineering-with-mlflow/)
 
-Планируется собирать записи, связанные с автоматизацией процессов машинного обучения - kubernetes, kubeflow, mlflow, airflow etc.
+<br/>
+
+### [Нужно чекнуть] MLOps Zoomcamp: A Free 9-Week Course on Productionizing ML Services
+
+https://github.com/DataTalksClub/mlops-zoomcamp?tab=readme-ov-file
 
 <br/>
 
@@ -44,12 +48,6 @@ https://ods.ai/tracks/ml-in-production-spring-23
 <br/>
 
 Можно посмотреть записи
-
-<br/>
-
-### Предлагаю рекомендовать интересные книги / курсы для изучения mlops
-
-Нужно, чтобы предлагающий тоже был бы готов изучать материал, разбирать примеры etc.
 
 <br/>
 <br/>

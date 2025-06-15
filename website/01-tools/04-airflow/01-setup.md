@@ -11,11 +11,17 @@ permalink: /tools/airflow/
 <br/>
 
 Делаю:  
-2023.06.30
+2025.05.02
 
 <br/>
 
 https://github.com/apache/airflow
+
+<br/>
+
+```
+$ mkdir -p /home/marley/projects/dev/mlops/airflow
+```
 
 <br/>
 
@@ -119,20 +125,18 @@ $ airflow dags list
 <br/>
 
 ```
-$ cd /home/marley/.local/lib/python3.10/site-packages/airflow/example_dags
-$ rm -rf *
-```
-
-<br/>
-
-```
-$ airflow scheduler
+// $ cd ~/.local/lib/python3.10/site-packages/airflow/example_dags
+// $ rm -rf *
 ```
 
 <br/>
 
 ```
 $ airflow dags list
+dag_id      | fileloc                                      | owners  | is_paused
+============+==============================================+=========+==========
+hello_world | /home/marley/projects/dev/mlops/airflow/dags | airflow | None
+            | /mlops_dag_1.py                              |         |
 ```
 
 <br/>
@@ -144,6 +148,15 @@ $ airflow dags test hello_world
 <br/>
 
 ```
+// Должен оставиться запущенным
+$ airflow scheduler
+```
+
+<br/>
+
+```
+// Еще 1 терминал
+$ source /etc/profile.d/airflow.sh
 $ airflow webserver -p 8080
 ```
 

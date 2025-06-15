@@ -10,15 +10,15 @@ permalink: /books/
 
 <br/>
 
+### [[Book][BooNeylson Crepaldek] Big Data on Kubernetes [ENG, 2024]](/books/machine-learning-engineering-with-mlflow/)
+
+<br/>
+
 ### [[Book] Machine Learning Engineering with MLflow [ENG, 2021]](/books/machine-learning-engineering-with-mlflow/)
 
 <br/>
 
 [![Machine Learning Engineering with MLflow](/img/Machine-Learning-Engineering-with-MLflow.jpeg 'Machine Learning Engineering with MLflow'){: .center-image }](/books/machine-learning-engineering-with-mlflow/)
-
-<br/>
-
-Прочитал, ничего не помню. Нужно перечитывать.
 
 <br/>
 
@@ -46,4 +46,4 @@ permalink: /books/
 
 <br/>
 
-![Machine Learning on Kubernetes](/img/Kubeflow-for-Machine-Learning.jpeg 'Machine Learning on Kubernetes'){: .center-image }
+![ubeflow for Machine Learning From Lab to Production](/img/Kubeflow-for-Machine-Learning.jpeg 'ubeflow for Machine Learning From Lab to Production'){: .center-image }

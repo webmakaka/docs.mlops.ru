@@ -55,7 +55,7 @@ Python 3.10.12
 <br/>
 
 Делаю:  
-2024.07.03
+2025.05.02
 
 <br/>
 
@@ -109,9 +109,22 @@ task_init
 $ airflow dags test mlops_dag_1
 ```
 
+В логах в UI
+
+<br/>
+
+```
+[2025-05-02, 12:30:15 UTC] {logging_mixin.py:188} INFO - Hello, World
+```
+
 <br/>
 
 ### 02. Загрузка данных в таблицу postgres
+
+<br/>
+
+Делаю:  
+2024.07.03
 
 <br/>
 
