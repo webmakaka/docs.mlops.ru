@@ -15,12 +15,14 @@ https://github.com/mlopsbootcamp/house-price-predictor
 
 <br/>
 
-Делаю:  
-2025.04.12
+**Делаю:**  
+2025.06.15
 
 <br/>
 
 ## 03. Use Case and Environment Setup
+
+<br/>
 
 ### 06. Launching MLflow for Experiemnt Tracking
 
@@ -48,7 +50,7 @@ http://localhost:5555
 
 <br/>
 
-### 8. Setting up Python Virtual Environment with UV
+### 08. Setting up Python Virtual Environment with UV
 
 ```
 $ curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -64,7 +66,7 @@ $ uv pip install -r requirements.txt
 
 <br/>
 
-### 9. Working with Jupyter Notebooks
+### 09. Working with Jupyter Notebooks
 
 ```
 $ code .
@@ -80,4 +82,24 @@ $ code .
 
 ```
 ext install ms-toolsai.jupyter
+```
+
+<br/>
+
+## 04. From Data to Models - Understanding Data Science with Feature Engineering
+
+<br/>
+
+### 02. Learning Data Engineering
+
+```bash
+$ python src/data/run_processing.py   --input data/raw/house_data.csv   --output data/processed/cleaned_house_data.csv
+```
+
+<br/>
+
+### 06. Preparing for Model Experimentation
+
+```bash
+$ python src/features/engineer.py   --input data/processed/cleaned_house_data.csv   --output data/processed/featured_house_data.csv   --preprocessor models/trained/preprocessor.pkl
 ```
