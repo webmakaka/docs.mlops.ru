@@ -1,0 +1,21 @@
+[Unit]
+Description=docs.mlops.ru
+
+Requires=docker.service
+After=docker.service
+
+[Service]
+
+Restart=always
+TimeoutStartSec=0
+ExecStartPre=-/usr/bin/docker kill docs.mlops.ru
+ExecStartPre=-/usr/bin/docker rm docs.mlops.ru
+ExecStartPre=-/usr/bin/docker pull marley/docs.mlops.ru:latest
+ExecStart=/bin/sh -c '/usr/bin/docker run --name docs.mlops.ru   \
+ -p 4006:80                        \
+ marley/docs.mlops.ru'
+ExecStop=-/usr/bin/docker kill docs.mlops.ru
+ExecStop=-/usr/bin/docker rm docs.mlops.ru
+
+[Install]
+WantedBy=multi-user.target

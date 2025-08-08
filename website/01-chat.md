@@ -1,7 +1,7 @@
 ---
 layout: page
-title: MLOPS.RU telegram чат
-description: MLOPS.RU telegram чат
+title: docs.mlops.ru telegram чат
+description: docs.mlops.ru telegram чат
 keywords: chat, telegram, mlops
 permalink: /chat/
 ---
