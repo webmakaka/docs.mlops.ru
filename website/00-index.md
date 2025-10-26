@@ -24,7 +24,7 @@ permalink: /
 
 <br/>
 
-### [Book] [Sebastian Raschka] Build a Large Language Model (From Scratch) [ENG, 2024]
+### [Book][Sebastian Raschka] Build a Large Language Model (From Scratch) [ENG, 2024]
 
 <br/>
 
