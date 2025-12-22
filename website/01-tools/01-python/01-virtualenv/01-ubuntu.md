@@ -11,7 +11,7 @@ permalink: /tools/python/virtualenv/ubuntu/
 <br/>
 
 Делаю:  
-2023.01.20
+2025.12.22
 
 <br/>
 
