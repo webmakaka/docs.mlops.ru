@@ -3,10 +3,10 @@ layout: page
 title: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
 description: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
 keywords: courses, devops to mlops bootcamp
-permalink: /courses/devops-to-mlops-bootcamp/
+permalink: /courses/ultimate-devops-to-mlops-bootcamp/
 ---
 
-# [Course][Udemy][Gourav Shah] DevOps to MLOps Bootcamp: Build & Deploy ML Systems End-to-End [ENG, 2025]
+# [Course][Udemy][Gourav Shah] Ultimate DevOps to MLOps Bootcamp - Build ML CICD Pipelines [ENG, 2025]
 
 <br/>
 
