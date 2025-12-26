@@ -3,113 +3,15 @@ layout: page
 title: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
 description: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
 keywords: courses, devops to mlops bootcamp
-permalink: /courses/ultimate-devops-to-mlops-bootcamp/
+permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/packaging-model-along-with-fastapi-wrapper-aand-streamlit-with-containers/
 ---
 
-# [Course][Udemy][Gourav Shah] Ultimate DevOps to MLOps Bootcamp - Build ML CI-CD Pipelines [ENG, 2025]
-
-<br/>
-
-**Git**  
-https://github.com/mlopsbootcamp/house-price-predictor
-
-<!-- https://github.com/initcron/hprice-predictor
-https://github.com/gouravshah/hprice-predictor/ -->
+# [Course][Udemy][Gourav Shah] Ultimate DevOps to MLOps Bootcamp - Build ML CI-CD Pipelines [ENG, 2025] : 06. Packaging Model along with FastAPI Wrapper and Streamlit with Containers
 
 <br/>
 
 **Делаю:**  
-2025.12.26
-
-<br/>
-
-```
-$ sudo apt install -y tree jq
-```
-
-<br/>
-
-## 03. Use Case and Environment Setup
-
-<br/>
-
-### 07. Launching MLflow for Experiemnt Tracking
-
-<br/>
-
-```
-$ mkdir -p ~/projects/courses/mlops
-$ cd ~/projects/courses/mlops/
-```
-
-<br/>
-
-```
-$ git clone git@github.com:webmakaka/house-price-predictor.git
-$ cd house-price-predictor/deployment/mlflow/
-$ docker compose up
-```
-
-<br/>
-
-```
-// OK!
-http://localhost:5555
-```
-
-<br/>
-
-### 09. Setting up Python Virtual Environment with UV
-
-```
-$ curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
-<br/>
-
-```
-$ cd ~/projects/courses/mlops/house-price-predictor/
-$ uv venv --python python3.11
-$ source .venv/bin/activate
-$ uv pip install -r requirements.txt
-```
-
-<br/>
-
-### 10. Working with Jupyter Notebooks
-
-```
-$ code .
-```
-
-<br/>
-
-```
-CTRL^P
-```
-
-<br/>
-
-```
-ext install ms-python.python
-ext install ms-toolsai.jupyter
-```
-
-<br/>
-
-```
-В vscode
-
-Run All -> notebooks\*.ipynb
-```
-
-<br/>
-
-В результате в MlFlow должны появиться эксперименты.
-
-<br/>
-
-## 06. Packaging Model along with FastAPI Wrapper and Streamlit with Containers
+2025.12.27
 
 <br/>
 
@@ -231,7 +133,7 @@ INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 <br/>
 
 ```
-^C^D
+CTRL^C, CTRL^D
 ```
 
 <br/>
@@ -380,108 +282,4 @@ $ docker push docker.io/webmakaka/streamlit:dev
 
 ```
 $ docker compose stop
-```
-
-<br/>
-
-## 07. Setting up MLOps CI Workflow with GitHub Actions
-
-<br/>
-
-### 04. Writing an executung out first GitHub Actions Workflow
-
-<br/>
-
-https://github.com/gouravshah/house-price-predictor3/tree/main/.github/workflows
-
-<br/>
-
-hub.docker.com -> Login -> Account Settings -> Personal access tokens -> Generate new token
-
-<br/>
-
-```
-Description: github-webmakaka
-Expiration date: none
-Optional: Read & Write
-```
-
-Generate, Скопировать токен.
-
-<br/>
-
-Github -> Repo -> house-price-predictor -> Settings -> Secrets and variables -> Actions -> Variables -> Repostitory variables -> New repository variable
-
-```
-DOCKERHUB_USERNAME
-```
-
-Secrets -> New repository secret
-
-```
-DOCKERHUB_TOKEN
-```
-
-<br/>
-
-```
-$ vi .github/workflows/mlops-pipeline.yml
-```
-
-https://github.com/webmakaka/house-price-predictor/blob/main/.github/workflows/mlops-pipeline.yml
-
-<br/>
-
-```
-$ vi .github/workflows/streamlit-ci.yaml
-```
-
-https://github.com/webmakaka/house-price-predictor/blob/main/.github/workflows/streamlit-ci.yaml
-
-<br/>
-
-## 08. Building Scalable Prod Inference Infrastructure with Kubernetes
-
-<br/>
-
-### 04. Simplest way to build a 3 Node Kubernetes Cluster with KIND
-
-<br/>
-
-Инсталляция и создание kubernetes кластера [kind](//gitops.ru/tools/containers/kubernetes/kind/)
-
-<br/>
-
-### 06. Deploying Streamlit Frontent App with Kubernetes
-
-```
-$ kubectl create deployment streamlit --image=webmakaka/streamlit:latest --port=8501
-```
-
-### 07. Exposing the Streamlit App with Kubernetes NodePort Service
-
-<br/>
-
-```
-$ kubectl create service nodeport streamlit --tcp=8501 --node-port=30000
-```
-
-<br/>
-
-### 08. Creating Deployment Service for the Model wrapped in FastAPI
-
-```
-$ kubectl create deployment model --image=webmakaka/house-price-model:latest --port=8000
-```
-
-<br/>
-
-```
-$ kubectl create service nodeport model --tcp=8000 --node-port=30100
-```
-
-```
-// OK!
-http://localhost:30100/docs
-http://localhost:30000
 ```
