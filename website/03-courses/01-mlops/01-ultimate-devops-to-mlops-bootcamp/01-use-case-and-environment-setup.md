@@ -3,18 +3,10 @@ layout: page
 title: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
 description: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
 keywords: courses, devops to mlops bootcamp
-permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/
+permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/use-case-and-environment-setup/
 ---
 
 # [Course][Udemy][Gourav Shah] Ultimate DevOps to MLOps Bootcamp - Build ML CI-CD Pipelines [ENG, 2025] : 03. Use Case and Environment Setup
-
-<br/>
-
-**Git**  
-https://github.com/mlopsbootcamp/house-price-predictor
-
-<!-- https://github.com/initcron/hprice-predictor
-https://github.com/gouravshah/hprice-predictor/ -->
 
 <br/>
 
