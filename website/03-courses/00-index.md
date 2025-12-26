@@ -10,7 +10,7 @@ permalink: /courses/
 
 <br/>
 
-### [[Course][Udemy][Gourav Shah] Ultimate DevOps to MLOps Bootcamp - Build ML CICD Pipelines [ENG, 2025]](/courses/ultimate-devops-to-mlops-bootcamp/)
+### [[Course][Udemy][Gourav Shah] Ultimate DevOps to MLOps Bootcamp - Build ML CI-CD Pipelines [ENG, 2025]](/courses/ultimate-devops-to-mlops-bootcamp/)
 
 <br/>
 

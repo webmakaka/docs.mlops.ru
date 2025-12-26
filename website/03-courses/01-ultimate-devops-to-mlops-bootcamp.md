@@ -6,20 +6,20 @@ keywords: courses, devops to mlops bootcamp
 permalink: /courses/ultimate-devops-to-mlops-bootcamp/
 ---
 
-# [Course][Udemy][Gourav Shah] Ultimate DevOps to MLOps Bootcamp - Build ML CICD Pipelines [ENG, 2025]
+# [Course][Udemy][Gourav Shah] Ultimate DevOps to MLOps Bootcamp - Build ML CI-CD Pipelines [ENG, 2025]
 
 <br/>
 
 **Git**  
 https://github.com/mlopsbootcamp/house-price-predictor
 
-https://github.com/initcron/hprice-predictor  
-https://github.com/gouravshah/hprice-predictor/
+<!-- https://github.com/initcron/hprice-predictor
+https://github.com/gouravshah/hprice-predictor/ -->
 
 <br/>
 
 **Делаю:**  
-2025.06.24
+2025.12.26
 
 <br/>
 
@@ -33,7 +33,7 @@ $ sudo apt install -y tree jq
 
 <br/>
 
-### 06. Launching MLflow for Experiemnt Tracking
+### 07. Launching MLflow for Experiemnt Tracking
 
 <br/>
 
@@ -59,24 +59,24 @@ http://localhost:5555
 
 <br/>
 
-### 08. Setting up Python Virtual Environment with UV
+### 09. Setting up Python Virtual Environment with UV
 
 ```
 $ curl -LsSf https://astral.sh/uv/install.sh | sh
-$ uv venv --python python3.11
-$ source .venv/bin/activate
 ```
 
 <br/>
 
 ```
-$ cd ~/projects/courses/mlops/
+$ cd ~/projects/courses/mlops/house-price-predictor/
+$ uv venv --python python3.11
+$ source .venv/bin/activate
 $ uv pip install -r requirements.txt
 ```
 
 <br/>
 
-### 09. Working with Jupyter Notebooks
+### 10. Working with Jupyter Notebooks
 
 ```
 $ code .
@@ -85,7 +85,7 @@ $ code .
 <br/>
 
 ```
-^P
+CTRL^P
 ```
 
 <br/>
@@ -109,11 +109,9 @@ Run All -> notebooks\*.ipynb
 
 <br/>
 
-## 04. From Data to Models - Understanding Data Science with Feature Engineering
+## 06. Packaging Model along with FastAPI Wrapper and Streamlit with Containers
 
 <br/>
-
-### 02. Learning Data Engineering
 
 ```bash
 $ python src/data/run_processing.py \
@@ -123,33 +121,24 @@ $ python src/data/run_processing.py \
 
 <br/>
 
-### 06. Preparing for Model Experimentation
-
-```bash
-$ python src/features/engineer.py \
-  --input data/processed/cleaned_house_data.csv \
-  --output data/processed/featured_house_data.csv \
-  --preprocessor models/trained/preprocessor.pkl
-```
-
-<br/>
-
-## 06. Packaging Model along with FastAPI Wrapper and Streamlit with Containers
-
-<br/>
-
 ### 03. Running Feature Engineering and Preprocessing Jobs
 
 ```bash
 $ python src/features/engineer.py \
+  --preprocessor models/trained/preprocessor.pkl \
   --input data/processed/cleaned_house_data.csv \
-  --output data/processed/featured_house_data.csv \
-  --preprocessor models/trained/preprocessor.pkl
+  --output data/processed/featured_house_data.csv
 ```
 
 <br/>
 
-### 04. Building and Training Final Model with Configs from Data Scientists
+Explore and run the notebook: notebooks/03_experimentation.ipynb totun the model experiments.
+This will generate configs/model_config.yaml
+
+If you have not run this notebook, download the sample config from model_config and add it to
+configs/model_config.yaml
+
+<br/>
 
 ```bash
 $ python src/models/train_model.py \
@@ -158,6 +147,8 @@ $ python src/models/train_model.py \
   --models-dir models \
   --mlflow-tracking-uri http://localhost:5555
 ```
+
+<br/>
 
 http://localhost:5555/#/models
 
