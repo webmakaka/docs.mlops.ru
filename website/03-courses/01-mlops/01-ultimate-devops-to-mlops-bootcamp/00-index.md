@@ -23,3 +23,5 @@ https://github.com/gouravshah/hprice-predictor/ -->
 ### [06. Packaging Model along with FastAPI Wrapper and Streamlit with Containers](/courses/mlops/ultimate-devops-to-mlops-bootcamp/packaging-model-along-with-fastapi-wrapper-aand-streamlit-with-containers/)
 
 ### [07. Setting up MLOps CI Workflow with GitHub Actions](/courses/mlops/ultimate-devops-to-mlops-bootcamp/setting-up-mlops-ci-workflow-with-github-actions/)
+
+### [08. Building Scalable Prod Inference Infrastructure with Kubernetes](/courses/mlops/ultimate-devops-to-mlops-bootcamp/building-scalable-prod-inference-infrastructure-with-kubernetes/)
