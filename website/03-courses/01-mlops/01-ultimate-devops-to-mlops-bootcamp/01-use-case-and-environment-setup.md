@@ -30,6 +30,12 @@ $ cd ~/projects/courses/mlops/
 
 ```
 $ git clone git@github.com:webmakaka/house-price-predictor.git
+```
+
+<br/>
+
+```
+// Run MLFLOW
 $ cd house-price-predictor/deployment/mlflow/
 $ docker compose up
 ```

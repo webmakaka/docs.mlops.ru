@@ -15,6 +15,13 @@ permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/packaging-model-alon
 
 <br/>
 
+```
+$ cd ~/projects/courses/mlops/house-price-predictor/
+$ source .venv/bin/activate
+```
+
+<br/>
+
 ```bash
 $ python src/data/run_processing.py \
   --input data/raw/house_data.csv \
@@ -23,9 +30,8 @@ $ python src/data/run_processing.py \
 
 <br/>
 
-### 03. Running Feature Engineering and Preprocessing Jobs
-
 ```bash
+// Running Feature Engineering and Preprocessing Jobs
 $ python src/features/engineer.py \
   --preprocessor models/trained/preprocessor.pkl \
   --input data/processed/cleaned_house_data.csv \
@@ -43,6 +49,7 @@ configs/model_config.yaml
 <br/>
 
 ```bash
+// Building and Training Final Model with Configs from Data Scientists
 $ python src/models/train_model.py \
   --config configs/model_config.yaml \
   --data data/processed/featured_house_data.csv \
@@ -77,8 +84,6 @@ $ tree
 <br/>
 
 ### 06. Writing Dockerfile to package Model with FastAPI Wrapper
-
-Код из репо выше
 
 <br/>
 
@@ -220,8 +225,6 @@ CMD  [ "streamlit", "run", "app.py", "--server.address=0.0.0.0" ]
 
 ```
 $ docker image build -t webmakaka/streamlit:v1 .
-$ docker login
-$ docker push webmakaka/streamlit:v1
 ```
 
 <br/>
@@ -274,6 +277,7 @@ http://localhost:8501/
 <br/>
 
 ```
+$ docker login
 $ docker push docker.io/webmakaka/fastapi:dev
 $ docker push docker.io/webmakaka/streamlit:dev
 ```
