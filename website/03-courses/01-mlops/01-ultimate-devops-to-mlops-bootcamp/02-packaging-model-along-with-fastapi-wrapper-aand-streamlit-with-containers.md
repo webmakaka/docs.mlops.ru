@@ -40,7 +40,8 @@ $ python src/features/engineer.py \
 
 <br/>
 
-Explore and run the notebook: notebooks/03_experimentation.ipynb totun the model experiments.
+Explore and run the notebook: notebooks/03_experimentation.ipynb to run the model experiments.
+
 This will generate configs/model_config.yaml
 
 If you have not run this notebook, download the sample config from model_config and add it to

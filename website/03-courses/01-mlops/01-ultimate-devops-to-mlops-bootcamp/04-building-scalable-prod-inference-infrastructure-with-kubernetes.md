@@ -11,7 +11,7 @@ permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/building-scalable-pr
 <br/>
 
 **Делаю:**  
-2025.\*\*\*\*
+2025.12.29
 
 <br/>
 
@@ -19,7 +19,7 @@ permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/building-scalable-pr
 
 <br/>
 
-Инсталляция и создание kubernetes кластера [kind](//gitops.ru/tools/containers/kubernetes/kind/)
+Инсталляция и создание kubernetes кластера [kind](//docs.k8s.ru/tools/containers/kubernetes/kind/)
 
 <br/>
 
@@ -50,6 +50,17 @@ $ kubectl create deployment model --image=webmakaka/house-price-model:latest --p
 ```
 $ kubectl create service nodeport model --tcp=8000 --node-port=30100
 ```
+
+<br/>
+
+```
+$ kubectl get pods
+NAME                        READY   STATUS    RESTARTS   AGE
+model-54fb689844-fvj4z      1/1     Running   0          88s
+streamlit-94fb5b648-pt57q   1/1     Running   0          103s
+```
+
+<br/>
 
 ```
 // OK!
