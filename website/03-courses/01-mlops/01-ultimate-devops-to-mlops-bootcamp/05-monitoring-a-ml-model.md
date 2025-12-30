@@ -2,7 +2,7 @@
 layout: page
 title: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End - Monitoring a ML Model
 description: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End - Monitoring a ML Model
-keywords: courses, devops to mlops bootcamp, Monitoring and Autoscaling a ML Model
+keywords: courses, devops to mlops bootcamp, Monitoring a ML Model
 permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/monitoring-a-ml-model/
 ---
 
@@ -110,9 +110,211 @@ http://localhost:30300/targets
 
 <br/>
 
-// Удалили gist.
-// Наверное забанили за много аккаунтов
-https://gist.githubusercontent.com/initcron/ca57251c80bc2f4a2adde0a878ebc585/raw/f6fb4304ebb026725c8c4d0e54c37d87ae64cafb/enhanced_fastapi_ml_dashboard.json
+**enhanced_fastapi_ml_dashboard.json**
+
+https://gist.github.com/gouravjshah/ca57251c80bc2f4a2adde0a878ebc585
+
+<br/>
+
+```json
+{
+  "title": "ML Model API - Full Observability Dashboard",
+  "timezone": "browser",
+  "refresh": "10s",
+  "schemaVersion": 30,
+  "version": 1,
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Request Rate (Total per Endpoint)",
+      "targets": [
+        {
+          "expr": "sum(rate(http_requests_total[1m])) by (handler)",
+          "legendFormat": "{{handler}}",
+          "refId": "A"
+        }
+      ],
+      "datasource": "Prometheus",
+      "gridPos": { "x": 0, "y": 0, "w": 12, "h": 8 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Latency (95th Percentile)",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[1m])) by (le, handler))",
+          "legendFormat": "{{handler}}",
+          "refId": "B"
+        }
+      ],
+      "datasource": "Prometheus",
+      "gridPos": { "x": 12, "y": 0, "w": 12, "h": 8 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Error Rate (4xx/5xx Responses)",
+      "targets": [
+        {
+          "expr": "sum(rate(http_requests_total{status=~\"4..|5..\"}[1m])) by (handler)",
+          "legendFormat": "{{handler}}",
+          "refId": "C"
+        }
+      ],
+      "datasource": "Prometheus",
+      "gridPos": { "x": 0, "y": 8, "w": 12, "h": 8 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Request Size (Bytes/sec)",
+      "targets": [
+        {
+          "expr": "sum(rate(http_request_size_bytes_sum[1m])) by (handler)",
+          "legendFormat": "{{handler}}",
+          "refId": "D"
+        }
+      ],
+      "datasource": "Prometheus",
+      "gridPos": { "x": 12, "y": 8, "w": 12, "h": 8 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Response Size (Bytes/sec)",
+      "targets": [
+        {
+          "expr": "sum(rate(http_response_size_bytes_sum[1m])) by (handler)",
+          "legendFormat": "{{handler}}",
+          "refId": "E"
+        }
+      ],
+      "datasource": "Prometheus",
+      "gridPos": { "x": 0, "y": 16, "w": 12, "h": 8 }
+    },
+    {
+      "type": "timeseries",
+      "title": "In-Flight Requests",
+      "targets": [
+        {
+          "expr": "http_request_duration_seconds_count - ignoring(le) group_left sum(http_request_duration_seconds_bucket) by (handler)",
+          "legendFormat": "{{handler}}",
+          "refId": "F"
+        }
+      ],
+      "datasource": "Prometheus",
+      "gridPos": { "x": 12, "y": 16, "w": 12, "h": 8 }
+    }
+  ],
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "type": "dashboard",
+        "name": "Annotations & Alerts",
+        "enable": true
+      }
+    ]
+  }
+}
+```
+
+<br/>
+
+**fastapi_prom_grafana_dashboard.json**
+
+https://gist.github.com/gouravjshah/2dd5482c36bc9c2111e036fb70916249
+
+```json
+{
+  "title": "FastAPI Prometheus Metrics Dashboard",
+  "timezone": "browser",
+  "refresh": "10s",
+  "schemaVersion": 30,
+  "version": 1,
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Request Rate (Total)",
+      "targets": [
+        {
+          "expr": "sum(rate(http_requests_total[1m])) by (handler)",
+          "legendFormat": "{{handler}}",
+          "refId": "A"
+        }
+      ],
+      "datasource": "Prometheus",
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 8
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Latency (95th Percentile)",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[1m])) by (le, handler))",
+          "legendFormat": "{{handler}}",
+          "refId": "A"
+        }
+      ],
+      "datasource": "Prometheus",
+      "gridPos": {
+        "x": 12,
+        "y": 0,
+        "w": 12,
+        "h": 8
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Request Size (Bytes/sec)",
+      "targets": [
+        {
+          "expr": "rate(http_request_size_bytes_sum[1m])",
+          "legendFormat": "{{handler}}",
+          "refId": "A"
+        }
+      ],
+      "datasource": "Prometheus",
+      "gridPos": {
+        "x": 0,
+        "y": 8,
+        "w": 12,
+        "h": 8
+      }
+    },
+    {
+      "type": "timeseries",
+      "title": "Response Size (Bytes/sec)",
+      "targets": [
+        {
+          "expr": "rate(http_response_size_bytes_sum[1m])",
+          "legendFormat": "{{handler}}",
+          "refId": "A"
+        }
+      ],
+      "datasource": "Prometheus",
+      "gridPos": {
+        "x": 12,
+        "y": 8,
+        "w": 12,
+        "h": 8
+      }
+    }
+  ],
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "type": "dashboard",
+        "name": "Annotations & Alerts",
+        "enable": true
+      }
+    ]
+  }
+}
+```
 
 <br/>
 

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
-description: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
-keywords: courses, devops to mlops bootcamp
+title: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End - Use Case and Environment Setup
+description: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End - Use Case and Environment Setup
+keywords: courses, devops to mlops bootcamp, Use Case and Environment Setup
 permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/use-case-and-environment-setup/
 ---
 

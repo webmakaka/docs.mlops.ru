@@ -2,7 +2,7 @@
 layout: page
 title: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End - Autoscaling a ML Model
 description: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End - Autoscaling a ML Model
-keywords: courses, devops to mlops bootcamp, Monitoring and Autoscaling a ML Model
+keywords: courses, devops to mlops bootcamp, Autoscaling a ML Model
 permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/autoscaling-a-ml-model/
 ---
 

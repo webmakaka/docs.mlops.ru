@@ -1,8 +1,8 @@
 ---
 layout: page
-title: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
-description: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
-keywords: courses, devops to mlops bootcamp
+title: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End - Setting up MLOps CI Workflow with GitHub Actions
+description: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End - Setting up MLOps CI Workflow with GitHub Actions
+keywords: courses, devops to mlops bootcamp, Setting up MLOps CI Workflow with GitHub Actions
 permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/setting-up-mlops-ci-workflow-with-github-actions/
 ---
 

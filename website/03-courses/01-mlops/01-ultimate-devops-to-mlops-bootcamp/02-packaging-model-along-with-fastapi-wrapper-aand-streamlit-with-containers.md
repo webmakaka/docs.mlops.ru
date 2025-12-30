@@ -1,8 +1,8 @@
 ---
 layout: page
-title: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
-description: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
-keywords: courses, devops to mlops bootcamp
+title: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End - Packaging Model along with FastAPI Wrapper and Streamlit with Containers
+description: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End - Packaging Model along with FastAPI Wrapper and Streamlit with Containers
+keywords: courses, devops to mlops bootcamp, Packaging Model along with FastAPI Wrapper and Streamlit with Containers
 permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/packaging-model-along-with-fastapi-wrapper-aand-streamlit-with-containers/
 ---
 

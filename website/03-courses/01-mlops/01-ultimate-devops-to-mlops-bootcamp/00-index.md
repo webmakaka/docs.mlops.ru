@@ -13,6 +13,8 @@ permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/
 **Git**  
 https://github.com/mlopsbootcamp/house-price-predictor
 
+https://github.com/gouravshah/house-price-predictor
+
 <!-- https://github.com/initcron/hprice-predictor
 https://github.com/gouravshah/hprice-predictor/ -->
 
@@ -29,3 +31,5 @@ https://github.com/gouravshah/hprice-predictor/ -->
 ### [09. Monitoring a ML Model](/courses/mlops/ultimate-devops-to-mlops-bootcamp/monitoring-a-ml-model/)
 
 ### [09. Autoscaling a ML Model](/courses/mlops/ultimate-devops-to-mlops-bootcamp/autoscaling-a-ml-model/)
+
+### [10. GitOps Based Deployments for MLLLM Apps](/courses/mlops/ultimate-devops-to-mlops-bootcamp/gitops-based-deployments-for-mlllm-apps/)
