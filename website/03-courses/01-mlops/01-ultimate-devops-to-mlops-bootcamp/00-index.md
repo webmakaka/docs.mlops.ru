@@ -25,3 +25,7 @@ https://github.com/gouravshah/hprice-predictor/ -->
 ### [07. Setting up MLOps CI Workflow with GitHub Actions](/courses/mlops/ultimate-devops-to-mlops-bootcamp/setting-up-mlops-ci-workflow-with-github-actions/)
 
 ### [08. Building Scalable Prod Inference Infrastructure with Kubernetes](/courses/mlops/ultimate-devops-to-mlops-bootcamp/building-scalable-prod-inference-infrastructure-with-kubernetes/)
+
+### [09. Monitoring a ML Model](/courses/mlops/ultimate-devops-to-mlops-bootcamp/monitoring-a-ml-model/)
+
+### [09. Autoscaling a ML Model](/courses/mlops/ultimate-devops-to-mlops-bootcamp/autoscaling-a-ml-model/)

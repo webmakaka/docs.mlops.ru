@@ -1,8 +1,8 @@
 ---
 layout: page
-title: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
-description: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End
-keywords: courses, devops to mlops bootcamp
+title: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End - Building Scalable Prod Inference Infrastructure with Kubernetes
+description: DevOps to MLOps Bootcamp - Build & Deploy ML Systems End-to-End - Building Scalable Prod Inference Infrastructure with Kubernetes
+keywords: courses, devops to mlops bootcamp, Building Scalable Prod Inference Infrastructure with Kubernetes
 permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/building-scalable-prod-inference-infrastructure-with-kubernetes/
 ---
 
@@ -11,44 +11,63 @@ permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/building-scalable-pr
 <br/>
 
 **Делаю:**  
-2025.12.29
+2025.12.30
 
 <br/>
 
-### 04. Simplest way to build a 3 Node Kubernetes Cluster with KIND
+### Инсталляция и создание kubernetes кластера [kind](//docs.k8s.ru/tools/containers/kubernetes/kind/)
 
 <br/>
-
-Инсталляция и создание kubernetes кластера [kind](//docs.k8s.ru/tools/containers/kubernetes/kind/)
-
-<br/>
-
-### 06. Deploying Streamlit Frontent App with Kubernetes
 
 ```
+// Deploying Streamlit Frontent App with Kubernetes
 $ kubectl create deployment streamlit --image=webmakaka/streamlit:latest --port=8501
 ```
 
-### 07. Exposing the Streamlit App with Kubernetes NodePort Service
-
 <br/>
 
 ```
+// Exposing the Streamlit App with Kubernetes NodePort Service
 $ kubectl create service nodeport streamlit --tcp=8501 --node-port=30000
 ```
 
 <br/>
 
-### 08. Creating Deployment Service for the Model wrapped in FastAPI
-
 ```
+// Creating Deployment Service for the Model wrapped in FastAPI
 $ kubectl create deployment model --image=webmakaka/house-price-model:latest --port=8000
 ```
 
-<br/>
+<!-- <br/>
 
 ```
 $ kubectl create service nodeport model --tcp=8000 --node-port=30100
+``` -->
+
+<br/>
+
+```yaml
+$ cat <<EOF | kubectl apply -f -
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: model
+  name: model
+spec:
+  ports:
+    - name: web
+      nodePort: 30100
+      port: 8000
+      protocol: TCP
+      targetPort: 8000
+  selector:
+    app: model
+  type: NodePort
+status:
+  loadBalancer: {}
+EOF
 ```
 
 <br/>
