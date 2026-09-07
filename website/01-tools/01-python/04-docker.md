@@ -12,12 +12,14 @@ https://www.tensorflow.org/install/docker
 
 <br/>
 
-### [Инсталляция docker в ubuntu linux](//gitops.ru/tools/containers/docker/setup/ubuntu/)
+### [Инсталляция docker в ubuntu linux](https://gitops.ru/tools/containers/docker/setup/ubuntu/)
 
 <br/>
 
-    // Запуск контейнера для работы
-    $ docker run -it -p 8888:8888 -p 6006:6006 tensorflow/tensorflow:latest-py3-jupyter
+```
+// Запуск контейнера для работы
+$ docker run -it -p 8888:8888 -p 6006:6006 tensorflow/tensorflow:latest-py3-jupyter
+```
 
 <!--
 
