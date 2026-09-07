@@ -15,7 +15,7 @@ permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/building-scalable-pr
 
 <br/>
 
-### Инсталляция и создание kubernetes кластера [kind](//docs.k8s.ru/tools/containers/kubernetes/kind/)
+### Инсталляция и создание kubernetes кластера [kind](https://docs.k8s.ru/tools/containers/kubernetes/kind/)
 
 <br/>
 
