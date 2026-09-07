@@ -28,7 +28,7 @@ permalink: /
 
 <br/>
 
-![Build a Large Language Model (From Scratch)](//llmeng.ru/img/books/Build-a-Large-Language-Model-From-Scratch.png 'Build a Large Language Model (From Scratch)'){: .center-image }
+![Build a Large Language Model (From Scratch)](https://llmeng.ru/img/books/Build-a-Large-Language-Model-From-Scratch.png 'Build a Large Language Model (From Scratch)'){: .center-image }
 
 <br/>
 
@@ -41,7 +41,7 @@ https://github.com/rasbt/LLMs-from-scratch
 
 <br/>
 
-![Master and Build Large Language Models](//llmeng.ru/img/books/Master-and-Build-Large-Language-Models.jpg 'Master and Build Large Language Models'){: .center-image }
+![Master and Build Large Language Models](https://llmeng.ru/img/books/Master-and-Build-Large-Language-Models.jpg 'Master and Build Large Language Models'){: .center-image }
 
 <br/>
 
@@ -49,7 +49,7 @@ https://www.manning.com/livevideo/master-and-build-large-language-models
 
 <br/>
 
-[Ссылка](//llmeng.ru/books/build-a-large-language-model-from-scratch/)
+[Ссылка](https://llmeng.ru/books/build-a-large-language-model-from-scratch/)
 
 <br/>
 

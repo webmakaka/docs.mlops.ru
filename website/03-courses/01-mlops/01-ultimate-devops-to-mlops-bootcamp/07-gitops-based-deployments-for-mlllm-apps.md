@@ -15,7 +15,7 @@ permalink: /courses/mlops/ultimate-devops-to-mlops-bootcamp/gitops-based-deploym
 
 <br/>
 
-### [Инсталляция ArgoCD в kind](//docs.gitops.ru//tools/containers/kubernetes/utils/ci-cd/argo/argo-cd/setup/kind/helm/)
+### [Инсталляция ArgoCD в kind](https://docs.gitops.ru//tools/containers/kubernetes/utils/ci-cd/argo/argo-cd/setup/kind/helm/)
 
 <br/>
 

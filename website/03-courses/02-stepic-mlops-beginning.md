@@ -42,7 +42,7 @@ Python 3.10.12
 
 <br/>
 
-### [Postgres](//gitops.ru/tools/containers/docker/db/postgresql/)
+### [Postgres](https://gitops.ru/tools/containers/docker/db/postgresql/)
 
 ### [Airflow](/tools/airflow/)
 

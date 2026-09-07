@@ -15,7 +15,7 @@ permalink: /tools/kubernetes/kubeflow/setup/
 
 <br/>
 
-**Требуется kustomize [Версии 5.1.0](//gitops.ru/tools/containers/kubernetes/tools/kustomize/)**
+**Требуется kustomize [Версии 5.1.0](https://docs.k8s.ru/tools/containers/kubernetes/utils/kustomize/)**
 
 <br/>
 
@@ -59,7 +59,7 @@ $ export \
 
 <br/>
 
-[Как запускать](//gitops.ru/tools/containers/kubernetes/minikube/setup/)
+[Как запускать](https://docs.k8s.ru/tools/containers/kubernetes/minikube/setup/)
 
 <br/>
 

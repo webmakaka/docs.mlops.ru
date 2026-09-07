@@ -10,7 +10,7 @@ permalink: /tools/python/nexus/
 
 <br/>
 
-### [Инсталляция nexus в ubuntu linux](//javadev.org/devtools/repository-management/nexus/3/installation-in-linux/)
+### [Инсталляция nexus в ubuntu linux](https://javadev.org/devtools/repository-management/nexus/3/installation-in-linux/)
 
 <br/>
 
